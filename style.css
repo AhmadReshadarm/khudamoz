@@ -1,0 +1,316 @@
+:root {
+    --mainText: #444F5A;
+    --secondaryText:black;
+    --thirdText: #fff;
+
+    --mainColor: #71C9CE;
+    --secondaryColor: #A6E3E9;
+    --textFieldColor: #E3FDFD;
+}
+
+@font-face{
+    font-family: Dirooz;
+    src: url(./Dirooz.ttf);
+}
+
+html, body{
+    padding: 0;
+    margin: 0;
+  
+}
+
+h1, h2, h3, h4, h5, h6, strong{
+    color: var(--mainText);
+    font-family: Dirooz;
+}
+
+p, li, span, label, input, textarea{
+    color: var(--secondaryText);
+    font-family: Dirooz;
+
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--thirdText);
+}
+
+button {
+    border: none;
+    outline: none;
+    font-family: Dirooz;
+}
+
+/* Header Section */
+.s1 {
+    display: flex;
+    flex-direction: column;
+}
+
+/*  top header  with user options*/
+.top {
+    background-color: var(--mainColor);
+    border-radius: 0 0 15px 15px;
+    -webkit-box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.082);
+    -moz-box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.082);
+    box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.082);
+    z-index: 1;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.right-nav{
+    display: flex;
+    place-items: center;
+}
+
+#logo {
+    width: 150px;
+    height: 80px;
+}
+
+.teach{
+    padding: 0 20px;
+}
+
+.loginBtn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.signUp{
+    margin: 0 5px;
+    background-color: #A6E3E9;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    color: var(--thirdText);
+    /* font-family: 'Roboto',
+    sans-serif; */
+    cursor: pointer;
+}
+
+.logIn {
+    margin: 0 5px;
+    background-color: transparent;
+    border: 2px solid #A6E3E9;
+    padding: 8px 20px;
+    border-radius: 5px;
+    color: var(--thirdText);
+    /* font-family: 'Roboto',
+    sans-serif; */
+    cursor: pointer;
+}
+
+.signUp:hover{
+    background-color: #95d1d6;
+}
+.logIn:hover{
+    border: 2px solid #95d1d6;
+    color: rgb(235, 233, 233);
+}
+
+/* Dark and Light mode button */
+.loader-wapper{
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    transition: 200ms;
+}
+
+.sun{
+        width: 26px;
+        height: 26px;
+        background-color: #A6E3E9;
+        border-radius: 100%;
+        position: absolute;
+       
+
+}
+
+.sun-light{
+        display: flex;
+        place-items: center;
+        justify-content: center;
+        height: 32px;
+        width: 32px;
+        border: 2px dotted #A6E3E9;
+        border-radius: 50%;
+        /* opacity: 1; */
+}
+
+.moon{
+        width: 26px;
+        height: 26px;
+        background-color: #222831;
+        border-radius: 100%;
+        position: absolute;
+           -webkit-box-shadow: inset 5px -5px 0px 2px #454e5c;
+           -moz-box-shadow: inset 5px -5px 0px 2px #454e5c;
+           box-shadow: inset 5px -5px 0px 2px #454e5c;
+}
+
+.loader-moon{
+    width: 26px;
+    height: 26px;
+    background-color: #A6E3E9;
+    border-radius: 100%;
+    position: absolute;
+        -webkit-animation: loader-1-1 400ms cubic-bezier(1, 0.165, 0.182, 0.075);
+        animation: loader-1-1 400ms cubic-bezier(1, 0.165, 0.182, 0.075);
+        animation-iteration-count: 1;
+}
+
+
+@-webkit-keyframes loader-1-1 {
+    0% {
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow:none;
+    }
+
+    100% {
+   -webkit-box-shadow: inset 5px -5px 0px 2px #454e5c;
+   -moz-box-shadow: inset 5px -5px 0px 2px #454e5c;
+   box-shadow: inset 5px -5px 0px 2px #454e5c;
+   background-color:#222831;
+    }
+}
+
+@keyframes loader-1-1 {
+    0% {
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow:none;
+    }
+
+    100% {
+   -webkit-box-shadow: inset 5px -5px 0px 2px #454e5c;
+   -moz-box-shadow: inset 5px -5px 0px 2px #454e5c;
+   box-shadow: inset 5px -5px 0px 2px #454e5c;
+    background-color:#222831;
+    }
+
+}
+
+
+.loader-light{
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    height: 32px;
+    width: 32px;
+    border: 2px dotted #A6E3E9;
+    border-radius: 50%;
+    opacity: 1;
+    -webkit-animation: loader-1 400ms cubic-bezier(1, 0.165, 0.182, 0.075);
+    animation: loader-1 400ms cubic-bezier(1, 0.165, 0.182, 0.075);
+    animation-iteration-count: 1;
+}
+
+@-webkit-keyframes loader-1 {
+    0%{
+        -webkit-transform: translate3d(0, 0, 0) scale(1);
+        opacity: 1;
+      
+    }
+    100%{
+        -webkit-transform: translate3d(0, 0, 0)  scale(0);
+        opacity: 0;
+        border: 2px dotted #393e46;
+      
+    }
+}
+
+@keyframes loader-1 {
+    0%{
+        transform: translate3d(0, 0, 0) scale(1);
+        opacity: 1;
+       
+    }
+    100%{
+        transform: translate3d(0, 0, 0) scale(0);
+        opacity: 0;
+        border: 2px dotted #393e46;
+        
+    }
+
+}
+
+.overLayer {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    box-shadow: 0px 0px 2px 0em var(--mainColor);
+    position: absolute;
+    animation: loader-1-2 1s cubic-bezier(1, 0.165, 0.182, 0.075);
+}
+
+@keyframes loader-1-2 {
+    0% {
+        box-shadow: 0px 0px 2px 0em var(--mainColor);
+    }
+
+    50% {
+       box-shadow: 0px 0px 2px 100em var(--mainColor);
+    }
+
+    100% {
+        box-shadow: 0px 0px 2px 0em var(--mainColor);
+    }
+}
+
+
+/* buttom header with navigation */
+.buttom {
+    background-color: var(--secondaryColor);
+    border-radius: 0 0 15px 15px;
+    margin-top: -10px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navigation{
+    display: flex;
+    flex-grow: 1;
+    max-width: 1200px;
+    justify-content: space-between;
+}
+
+#main-search {
+    background: url(./search_icon.svg) no-repeat 165px 0;
+    outline: none;
+    background-color: #E3FDFD;
+    border-radius: 15px;
+    border: none;
+    text-align: center;
+    color: var(--mainText);
+    font-size: 14px;
+    padding: 5px 30px;
+    
+}
+#main-search::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #a1a1a1;
+    opacity: 1;
+    /* Firefox */
+}
+#main-search:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #a1a1a1;
+}
+#main-search::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #a1a1a1;
+}
+
+
+
+
+
