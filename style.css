@@ -7,6 +7,7 @@
   --box-shadow: rgba(0, 0, 0, 0.082);
   --mainColor: #fff;
   --textFieldColor: #f4f4f4;
+  --section-bg-color: #f9f8fd;
   --Btn: #ea4c89;
   --btnHover: #f082ac;
 }
@@ -200,6 +201,13 @@ button {
   color: var(--boldText);
   font-size: 14px;
   padding: 3% 30px;
+  transition: 200ms;
+}
+
+.main-search:active,
+.main-search:focus {
+  background-color: var(--section-bg-color);
+  transition: 200ms;
 }
 .main-search::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -387,7 +395,7 @@ button {
 /* ------------------------------------ section 2 -------------------------------------------- */
 
 .s2 {
-  background-color: #f9f8fd;
+  background-color: var(--section-bg-color);
   height: 500px;
   display: flex;
   align-items: center;
@@ -494,16 +502,12 @@ button {
   flex-direction: column;
 }
 
-.top-course-title-wrapper {
-  margin-top: 0;
-}
 .top-course-header {
-  margin-top: 0;
   margin-right: 5px;
 }
 
 .top-course-wrapper {
-  background-color: var(--textFieldColor);
+  background-color: var(--section-bg-color);
   border-radius: 10px;
   padding: 10px 0;
   display: grid;
@@ -540,9 +544,12 @@ button {
 }
 
 .course-title-wrapper {
+  display: flex;
+  justify-content: center;
 }
 
 .top-course-title {
+  text-align: center;
   margin: 0;
 }
 
