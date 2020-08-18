@@ -17,10 +17,15 @@
   src: url(./Dirooz.ttf);
 }
 
+* {
+  transition: 200ms;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
+  transition: 200ms;
 }
 
 h1,
@@ -43,7 +48,9 @@ input,
 textarea {
   font-family: Dirooz;
   color: var(--secondText);
-  font-size: 1.05vw;
+  font-size: 1.1vw;
+  cursor: default;
+  border: none;
 }
 
 ul {
@@ -92,6 +99,12 @@ button {
   height: 80px;
 }
 
+.left-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 /* --------------------------- right side top header ------------------------ */
 .right-nav {
   display: flex;
@@ -99,10 +112,10 @@ button {
 }
 
 .header-gap-auth-btn {
-  padding: 0 20px;
+  padding: 10px 20px;
 }
 
-.auth-btn a span:hover {
+.header-gap-auth-btn span:hover {
   cursor: default;
   color: var(--activeText);
 }
@@ -119,8 +132,7 @@ button {
   border: none;
   font-size: 1.02vw;
   padding: 6px 20px;
-  border-radius: 10px;
-  transition: 200ms;
+  border-radius: 5px;
   display: flex;
   place-items: center;
 }
@@ -134,22 +146,19 @@ button {
   border: 1px solid var(--Btn);
   font-size: 1.02vw;
   padding: 6px 25px;
-  border-radius: 10px;
-  transition: 200ms;
+  border-radius: 5px;
   display: flex;
   place-items: center;
 }
 
 .signUp:hover {
   background-color: var(--btnHover);
-  transition: 200ms;
 }
 .logIn:hover {
   border: 1px solid var(--btnHover);
 }
 
 .logIn:hover > span {
-  transition: 200ms;
   color: var(--activeText);
 }
 
@@ -169,66 +178,49 @@ button {
 /* ----------------------------- left side -------------------------------------- */
 .left-bottom-nav {
   flex-grow: 0;
+  display: flex;
+  place-items: center;
 }
 
 .search {
   display: flex;
   flex-direction: row;
   place-items: center;
-  justify-content: space-evenly;
-}
-
-.search-btn {
-  border-radius: 10px 0 0 10px;
-  display: flex;
-  place-items: center;
-  color: var(--secondText);
-  background-color: var(--Btn);
-}
-
-.search-img {
-  width: 38px;
-  height: 38px;
+  justify-content: center;
 }
 
 .main-search {
   outline: none;
+  background: url(./search_icon.svg);
+  background-repeat: no-repeat;
+  background-size: 40px 40px;
+  background-position: left;
   background-color: var(--textFieldColor);
-  border-radius: 0 10px 10px 0;
-  border: none;
-  width: 80%;
-  text-align: center;
+  border-radius: 5px;
+  text-align: right;
   color: var(--boldText);
-  font-size: 14px;
-  padding: 3% 30px;
-  transition: 200ms;
+  padding: 6px 20px;
 }
 
 .main-search:active,
 .main-search:focus {
+  background-size: 35px 35px;
   background-color: var(--section-bg-color);
-  transition: 200ms;
+  padding: 6px 40px;
 }
 .main-search::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: var(--place-holder-text);
   opacity: 1;
-  font-size: 1.28vw;
   /* Firefox */
 }
 .main-search:-ms-input-placeholder {
   /* Internet Explorer 10-11 */
   color: var(--place-holder-text);
-  font-size: 1.28vw;
 }
 .main-search::-ms-input-placeholder {
   /* Microsoft Edge */
   color: var(--place-holder-text);
-  font-size: 1.28vw;
-}
-
-.search-btn:hover {
-  background-color: var(--btnHover);
 }
 
 /* ------------------------------------- right side ------------------------------------------ */
@@ -236,29 +228,37 @@ button {
   flex-grow: 1;
 }
 .nav-item {
+  width: 100%;
   margin: 0 auto;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  transform: translateX(-35px);
 }
 
 .item {
-  font-size: 1.3vw;
-  padding: 3px 1%;
-  margin: auto 1%;
+  margin: 5px;
+  padding: 2px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.item-active {
+.item a span:hover {
+  color: var(--activeText);
+}
+
+.item-active a span {
   background-color: var(--textFieldColor);
   border-radius: 5px;
+  color: var(--activeText);
+  padding: 6px;
 }
 /* ------------------- Dark and Light mode button animation ----------------------- */
 .loader-wapper {
   display: flex;
   justify-content: center;
   place-items: center;
-  transition: 200ms;
-  padding-right: 12px;
 }
 
 .sun {
@@ -384,7 +384,7 @@ button {
   }
 
   50% {
-    box-shadow: 0px 0px 2px 100em var(--mainColor);
+    box-shadow: 0px 0px 2px 200em var(--mainColor);
   }
 
   100% {
@@ -398,7 +398,8 @@ button {
   background-color: var(--section-bg-color);
   height: 500px;
   display: flex;
-  align-items: center;
+  place-items: center;
+  padding: 20px 0;
 }
 .s2-wrapper {
   flex-grow: 1;
@@ -418,6 +419,9 @@ button {
 
 .left-column-intro {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .img-size {
@@ -428,8 +432,12 @@ button {
 /* ^^^^^^^^^^^^^--------------- 1080 display media quarey for intro image ---------------^^^^^^^^^^^^ */
 
 @media only screen and (min-width: 1400px) {
+  .s2 {
+    height: 650px;
+  }
+
   .img-size {
-    width: 65%;
+    width: 70%;
     object-fit: cover;
   }
 }
@@ -460,27 +468,25 @@ button {
 }
 
 .intro-action-btn {
+  text-align: center;
   background-color: var(--Btn);
   color: var(--mainColor);
-  border-radius: 10px;
+  border-radius: 5px;
   font-size: 1.5vw;
   padding: 5px 0;
-  width: 250px;
+  width: 50%;
   -webkit-box-shadow: 0px 1px 2px 1px var(--box-shadow);
   -moz-box-shadow: 0px 1px 2px 1px var(--box-shadow);
   box-shadow: 0px 1px 2px 1px var(--box-shadow);
-  transition: 200ms;
 }
 
 .intro-action-btn:hover {
   background-color: var(--btnHover);
-  transition: 200ms;
 }
 .intro-action-btn:active {
   -webkit-box-shadow: 0px 0px 0 0 var(--mainColor);
   -moz-box-shadow: 0px 0px 0 0 var(--mainColor);
   box-shadow: 0px 0px 0 0 var(--mainColor);
-  transition: 200ms;
 }
 /* --------------------------- section 3 ------------------------ */
 .s3 {
@@ -512,6 +518,7 @@ button {
   padding: 10px 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 10px;
   justify-content: space-evenly;
 }
 .course-item-wrapper {
@@ -531,10 +538,8 @@ button {
   place-items: center;
   justify-content: center;
   margin-bottom: 10px;
-  transition: 200ms;
 }
 .course-img-wrapper:hover {
-  transition: 200ms;
   box-shadow: 0px 0px 2px 1px var(--box-shadow);
   cursor: pointer;
 }

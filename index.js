@@ -2,6 +2,13 @@ const themBtn = document.querySelector(".loader-wapper");
 const btnOutter = document.getElementById("them-mode-outer");
 const btnInner = document.getElementById("them-mode-inner");
 const overLayer = document.getElementById("overLayer");
+const items = document.querySelectorAll(".item");
+for (let i = 0; i < items.length; i++) {
+  items[i].addEventListener("click", () => {
+    items[i].classList.toggle("item-active");
+  });
+}
+
 themBtn.addEventListener("click", () => {
   btnOutter.classList.toggle("loader-light");
   btnInner.classList.toggle("loader-moon");
