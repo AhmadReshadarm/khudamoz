@@ -702,7 +702,7 @@ button {
   display: block;
   z-index: 2;
   position: absolute;
-  top: calc(285% + 10px);
+  top: calc(185% + 5px);
   background-color: var(--mainColor);
   border: 1px solid var(--box-shadow);
   border-radius: 10px;
