@@ -2,13 +2,58 @@ const themBtn = document.querySelector(".loader-wapper");
 const btnOutter = document.getElementById("them-mode-outer");
 const btnInner = document.getElementById("them-mode-inner");
 const overLayer = document.getElementById("overLayer");
-const items = document.querySelectorAll(".item");
-for (let i = 0; i < items.length; i++) {
-  items[i].addEventListener("click", () => {
-    items[i].classList.toggle("item-active");
+const items = document.querySelectorAll(".category");
+const btn_dropdown = document.querySelector(".animation-btn");
+const btn_dropdown_animitaion = document.querySelector(".btn-dropdown-link");
+const dropdown_options = document.querySelector(".btn-dropdown-options");
+const active_option = document.querySelectorAll(".btn-dropdown-options ul a");
+const btn_inner_text = document.querySelector(".btn-dropdown-link span");
+
+for (let i = 0; i < active_option.length; i++) {
+  active_option[i].addEventListener("click", () => {
+    for (let j = 0; j < active_option.length; j++) {
+      active_option[j].classList.remove("isActive");
+    }
+    const innerText = active_option[i].innerText;
+    active_option[i].classList.add("isActive");
+    btn_inner_text.innerText = innerText;
   });
 }
 
+window.addEventListener("click", (e) => {
+  if (
+    e.target.matches(".btn-dropdown-link span") ||
+    e.target.matches(".btn-dropdown-link") ||
+    e.target.matches(".btn-dropdown-link svg") ||
+    e.target.matches(".btn-dropdown-link svg path")
+  ) {
+    return;
+  } else {
+    dropdown_options.classList.add("d-none");
+    btn_dropdown.classList.remove("btn-arrow-open");
+  }
+});
+
+const all_links = document.querySelectorAll("a");
+for (let i = 0; i < all_links.length; i++) {
+  all_links[i].addEventListener("click", (e) => {
+    e.preventDefault();
+  });
+}
+
+btn_dropdown_animitaion.addEventListener("click", () => {
+  btn_dropdown.classList.toggle("btn-arrow-open");
+  dropdown_options.classList.toggle("d-none");
+});
+
+//--------------------------------------
+for (let i = 0; i < items.length; i++) {
+  items[i].addEventListener("click", () => {
+    items[i].classList.toggle("category-active");
+  });
+}
+
+// --------------------------------------------------------------------------
 themBtn.addEventListener("click", () => {
   btnOutter.classList.toggle("loader-light");
   btnInner.classList.toggle("loader-moon");
@@ -23,11 +68,6 @@ themBtn.addEventListener("click", () => {
     overLayer.classList.remove("overLayer");
   }, 500);
 });
-
-// arrow element
-// <svg>
-//   <path d="M21.5265 8.77171C22.1578 8.13764 22.1578 7.10962 21.5265 6.47555C20.8951 5.84148 19.8714 5.84148 19.24 6.47555L11.9999 13.7465L4.75996 6.47573C4.12858 5.84166 3.10492 5.84166 2.47354 6.47573C1.84215 7.10979 1.84215 8.13782 2.47354 8.77188L10.8332 17.1671C10.8408 17.1751 10.8486 17.183 10.8565 17.1909C11.0636 17.399 11.313 17.5388 11.577 17.6103C11.5834 17.6121 11.5899 17.6138 11.5964 17.6154C12.132 17.7536 12.7242 17.6122 13.1435 17.1911C13.1539 17.1807 13.1641 17.1702 13.1742 17.1596L21.5265 8.77171Z"></path>
-// </svg>;
 
 // heart elemetn
 
