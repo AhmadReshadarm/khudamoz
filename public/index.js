@@ -1,7 +1,7 @@
-const themBtn = document.querySelector(".loader-wapper");
-const btnOutter = document.getElementById("them-mode-outer");
-const btnInner = document.getElementById("them-mode-inner");
-const overLayer = document.getElementById("overLayer");
+const themBtn = document.querySelector(".them-mood-wrapper");
+const them_btn_outter = document.getElementById("them-mode-outer");
+const them_btn_inner = document.getElementById("them-mode-inner");
+const overLayer = document.getElementById("animation-circle");
 const items = document.querySelectorAll(".header-category");
 const btn_dropdown = document.querySelector(".animation-btn");
 const btn_dropdown_animitaion = document.querySelector(".btn-dropdown-link");
@@ -25,12 +25,15 @@ window.addEventListener("click", (e) => {
     e.target.matches(".btn-dropdown-link span") ||
     e.target.matches(".btn-dropdown-link") ||
     e.target.matches(".btn-dropdown-link svg") ||
-    e.target.matches(".btn-dropdown-link svg path")
+    e.target.matches(".btn-dropdown-link svg path") ||
+    e.target.matches(".search-clear") ||
+    e.target.matches(".js-main-search")
   ) {
     return;
   } else {
     dropdown_options.classList.add("d-none");
     btn_dropdown.classList.remove("btn-arrow-open");
+    search_clear_btn.classList.add("d-none");
   }
 });
 
@@ -53,21 +56,61 @@ for (let i = 0; i < items.length; i++) {
   });
 }
 
-// --------------------------------------------------------------------------
-themBtn.addEventListener("click", () => {
-  btnOutter.classList.toggle("loader-light");
-  btnInner.classList.toggle("loader-moon");
-  overLayer.classList.add("overLayer");
-  setTimeout(() => {
-    btnOutter.style.border = "2px dotted #222831";
-    btnInner.classList.remove("sun");
-    btnInner.classList.remove("loader-moon");
-    btnInner.classList.add("moon");
-  }, 350);
-  setTimeout(() => {
-    overLayer.classList.remove("overLayer");
-  }, 500);
+// ---------------------------------- them changer function ----------------------------------------
+const them_values = document.getElementById("them-style");
+let dark_mode = false;
+let theme = localStorage.getItem("theme");
+if (theme === null) {
+  setThem("light");
+} else {
+  setThem(theme);
+}
+
+themBtn.addEventListener("click", function () {
+  let mode = this.dataset.mode;
+  if (!dark_mode) {
+    setThem(mode);
+    them_btn_outter.classList.remove("sun-light");
+    them_btn_inner.classList.remove("sun");
+    them_btn_outter.classList.add("loader-moon-light");
+    them_btn_inner.classList.add("loader-sun-to-moon");
+    overLayer.classList.add("animation-circle");
+    setTimeout(() => {
+      them_btn_outter.classList.add("moon-light");
+      them_btn_inner.classList.add("moon");
+      them_btn_outter.classList.remove("loader-moon-light");
+      them_btn_inner.classList.remove("loader-sun-to-moon");
+      overLayer.classList.remove("animation-circle");
+    }, 500);
+    dark_mode = true;
+    this.dataset.mode = "light";
+  } else {
+    setThem(mode);
+    them_btn_outter.classList.remove("moon-light");
+    them_btn_inner.classList.remove("moon");
+    them_btn_outter.classList.add("loader-sun-light");
+    them_btn_inner.classList.add("loader-moon-to-sun");
+    overLayer.classList.add("animation-circle");
+    setTimeout(() => {
+      them_btn_outter.classList.add("sun-light");
+      them_btn_inner.classList.add("sun");
+      them_btn_outter.classList.remove("loader-sun-light");
+      them_btn_inner.classList.remove("loader-moon-to-sun");
+      overLayer.classList.remove("animation-circle");
+    }, 500);
+    dark_mode = false;
+    this.dataset.mode = "dark";
+  }
 });
+
+function setThem(mode) {
+  if (mode === "dark") {
+    them_values.href = "./dark.css";
+  } else {
+    them_values.href = "";
+  }
+  localStorage.setItem("theme", mode);
+}
 
 const category_wrapper = document.querySelector(".categories-wrapper");
 const scroll_left_btn = document.querySelector(".scroll-left");
@@ -128,6 +171,17 @@ const filter_active_btn = document.querySelector(".filter-extra-dropdown-btn");
 filter_dropdown_btn.addEventListener("click", () => {
   filter_container.classList.toggle("d-none");
   filter_active_btn.classList.toggle("filter-extra-active-btn");
+});
+
+const search_clear_btn = document.querySelector(".search-clear");
+const search_input = document.querySelector(".js-main-search");
+
+search_input.addEventListener("keypress", () => {
+  search_clear_btn.classList.remove("d-none");
+  search_clear_btn.addEventListener("click", () => {
+    search_input.value = "";
+    search_clear_btn.classList.add("d-none");
+  });
 });
 
 // heart elemetn

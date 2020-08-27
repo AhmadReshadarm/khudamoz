@@ -1,0 +1,16 @@
+:root {
+  --boldText: #eeeeee;
+  --secondText: #eeeeee;
+  --activeText: #7a7a7e;
+  --place-holder-text: #929199;
+
+  --box-shadow: rgba(0, 0, 0, 0.082);
+  --options-hover: #364f6b;
+  --mainColor: #222831;
+  --textFieldColor: #393e46;
+  --section-bg-color: #393e46;
+  --Btn: #00adb5;
+  --btnHover: #0cc6cf;
+  --outline-color: #00adb5;
+  --btn-box-shadow: #00acb538;
+}
