@@ -346,8 +346,8 @@ fieldset {
   border-radius: 50%;
   position: absolute;
   transform: scale(0);
-  -webkit-animation: loader-1-1 550ms cubic-bezier(1, 0.165, 0.182, 0.075);
-  animation: loader-1-1 550ms cubic-bezier(1, 0.165, 0.182, 0.075);
+  -webkit-animation: loader-1-1 400ms cubic-bezier(1, 0.165, 0.182, 0.075);
+  animation: loader-1-1 400ms cubic-bezier(1, 0.165, 0.182, 0.075);
 }
 
 @-webkit-keyframes loader-1-1 {
@@ -377,8 +377,8 @@ fieldset {
   width: 32px;
   border: 2px dotted var(--Btn);
   border-radius: 50%;
-  -webkit-animation: loader-1 550ms cubic-bezier(1, 0.165, 0.182, 0.075);
-  animation: loader-1 550ms cubic-bezier(1, 0.165, 0.182, 0.075);
+  -webkit-animation: loader-1 400ms cubic-bezier(1, 0.165, 0.182, 0.075);
+  animation: loader-1 400ms cubic-bezier(1, 0.165, 0.182, 0.075);
 }
 
 @-webkit-keyframes loader-1 {
@@ -432,8 +432,8 @@ fieldset {
   background-color: var(--mainColor);
   border-radius: 50%;
   position: absolute;
-  -webkit-animation: loader-1-1 550ms cubic-bezier(1, 0.165, 0.182, 0.075);
-  animation: loader-1-1 550ms cubic-bezier(1, 0.165, 0.182, 0.075);
+  -webkit-animation: loader-1-1 400ms cubic-bezier(1, 0.165, 0.182, 0.075);
+  animation: loader-1-1 400ms cubic-bezier(1, 0.165, 0.182, 0.075);
 }
 
 @-webkit-keyframes loader-1-1 {
@@ -474,8 +474,8 @@ fieldset {
   width: 32px;
   border: 2px dotted var(--section-bg-color);
   border-radius: 50%;
-  -webkit-animation: loader-1 550ms cubic-bezier(1, 0.165, 0.182, 0.075);
-  animation: loader-1 550ms cubic-bezier(1, 0.165, 0.182, 0.075);
+  -webkit-animation: loader-1 400ms cubic-bezier(1, 0.165, 0.182, 0.075);
+  animation: loader-1 400ms cubic-bezier(1, 0.165, 0.182, 0.075);
 }
 
 @-webkit-keyframes loader-1 {
@@ -500,14 +500,15 @@ fieldset {
 
 /* ------------- moon end ------------------- */
 
-.animation-circle {
+
+/* .animation-circle {
   width: 40px;
   height: 40px;
   border-radius: 100%;
   box-shadow: 0px 0px 2px 0em var(--mainColor);
   position: absolute;
-  animation: loader-1-2 500ms cubic-bezier(1, 0.165, 0.182, 0.075);
-  /* z-index: 0; */
+  animation: loader-1-2 400ms cubic-bezier(1, 0.165, 0.182, 0.075);
+
 }
 
 @keyframes loader-1-2 {
@@ -522,7 +523,7 @@ fieldset {
   100% {
     box-shadow: 0px 0px 2px 0em var(--mainColor);
   }
-}
+} */
 
 /* ------------------------------------ section 2 -------------------------------------------- */
 

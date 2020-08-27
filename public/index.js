@@ -66,10 +66,26 @@ if (theme === null) {
   setThem(theme);
 }
 
+if (theme === "dark") {
+  themBtn.dataset.mode = "light";
+}
+else {
+  themBtn.dataset.mode = "dark";
+}
+
 themBtn.addEventListener("click", function () {
   let mode = this.dataset.mode;
-  if (!dark_mode) {
-    setThem(mode);
+  if (mode === "light") {
+    themBtn.dataset.mode = "dark";
+  } else {
+    themBtn.dataset.mode = "light";
+  }
+  setThem(mode)
+});
+
+function setThem(them_mode) {
+  if (them_mode === "dark") {
+    them_values.href = "./dark.css";
     them_btn_outter.classList.remove("sun-light");
     them_btn_inner.classList.remove("sun");
     them_btn_outter.classList.add("loader-moon-light");
@@ -81,11 +97,9 @@ themBtn.addEventListener("click", function () {
       them_btn_outter.classList.remove("loader-moon-light");
       them_btn_inner.classList.remove("loader-sun-to-moon");
       overLayer.classList.remove("animation-circle");
-    }, 500);
-    dark_mode = true;
-    this.dataset.mode = "light";
+    }, 350);
   } else {
-    setThem(mode);
+    them_values.href = "";
     them_btn_outter.classList.remove("moon-light");
     them_btn_inner.classList.remove("moon");
     them_btn_outter.classList.add("loader-sun-light");
@@ -97,19 +111,9 @@ themBtn.addEventListener("click", function () {
       them_btn_outter.classList.remove("loader-sun-light");
       them_btn_inner.classList.remove("loader-moon-to-sun");
       overLayer.classList.remove("animation-circle");
-    }, 500);
-    dark_mode = false;
-    this.dataset.mode = "dark";
+    }, 350);
   }
-});
-
-function setThem(mode) {
-  if (mode === "dark") {
-    them_values.href = "./dark.css";
-  } else {
-    them_values.href = "";
-  }
-  localStorage.setItem("theme", mode);
+  localStorage.setItem("theme", them_mode);
 }
 
 const category_wrapper = document.querySelector(".categories-wrapper");
