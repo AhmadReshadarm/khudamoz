@@ -61,7 +61,7 @@ textarea,
 path {
   font-family: Dirooz;
   color: var(--secondText);
-  font-size: 1.1vw;
+  font-size: 1rem;
   cursor: default;
   border: none;
   fill: var(--secondText);
@@ -92,6 +92,7 @@ fieldset {
 
 .d-none {
   display: none !important;
+  transition: 200ms;
 }
 
 .full-width {
@@ -500,7 +501,6 @@ fieldset {
 
 /* ------------- moon end ------------------- */
 
-
 /* .animation-circle {
   width: 40px;
   height: 40px;
@@ -575,12 +575,12 @@ fieldset {
 }
 
 .intro-title {
-  font-size: 3vw;
+  font-size: 2.5rem;
   margin-top: 0;
 }
 
 .intro-detial {
-  font-size: 1vw;
+  font-size: 0.785rem;
   text-align: right;
   margin-bottom: 2em;
   margin-bottom: 4em;
@@ -591,7 +591,7 @@ fieldset {
   background-color: var(--Btn);
   color: var(--mainColor);
   border-radius: 5px;
-  font-size: 1.5vw;
+  font-size: 1.125rem;
   padding: 5px 0;
   width: 50%;
   -webkit-box-shadow: 0px 1px 2px 1px var(--box-shadow);
@@ -782,6 +782,17 @@ fieldset {
   transform: rotate(180deg);
 }
 
+/* ------------------------ css trick for arrow and dropdown but not able to select ---------------- */
+
+/* .btn-dropdown > .outline:focus > svg {
+  transform: rotate(180deg);
+}
+
+.btn-dropdown > .outline:focus + .btn-dropdown-options {
+  display: block !important;
+} */
+/* ----------------------------------------------------------------------------- */
+
 .btn-dropdown-options {
   display: block;
   z-index: 2;
@@ -968,4 +979,213 @@ fieldset {
 .lang-wrapper {
   padding: 0;
   margin: 0;
+}
+
+/* ------------------------------------ scetion 5 css --------------------------------------- */
+
+.s5 {
+  content-visibility: auto;
+  background-color: var(--mainColor);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.transform-position {
+  transform: translateY(-140px);
+}
+
+.section-5-wrapper {
+  max-width: 90%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  place-items: center;
+  row-gap: 2rem;
+  column-gap: 2rem;
+}
+
+@media only screen and (max-width: 1500px) {
+  /* ----------------- utility ------------------- */
+
+  a,
+  p,
+  li,
+  span,
+  input,
+  textarea,
+  path {
+    font-size: 0.85rem;
+  }
+
+  /* ----------------section 5 ----------------- */
+  .section-5-wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media only screen and (max-width: 1330px) {
+  /* ----------------section 5 ----------------- */
+  .section-5-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (max-width: 945px) {
+  /* ----------------section 5 ----------------- */
+  .section-5-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 620px) {
+  /* ----------------section 5 ----------------- */
+  .section-5-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.lesson-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-height: 20rem;
+}
+.card-preview {
+  height: 200px;
+  position: relative;
+  background: url(./undraw_pair_programming_njlp.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.card-detail {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+
+.lesson-title-fav-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.fav-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  place-items: center;
+  margin-top: -5px;
+}
+
+.fav-icon svg {
+  width: 16px;
+  height: 16px;
+}
+.fav-icon svg path:hover {
+  fill: var(--Btn);
+}
+
+.title h4 {
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.card-wrapper {
+  height: 20rem;
+}
+
+.rating svg {
+  width: 18px;
+  height: 18px;
+}
+
+.teacher-name-rating {
+  display: flex;
+  flex-direction: column;
+  place-items: flex-end;
+}
+
+.t-name p {
+  padding: 0;
+  margin: 5px 0px;
+}
+
+.rating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+}
+
+.rating svg {
+  width: 18px;
+  height: 18px;
+}
+.rating svg path {
+  fill: #eb8a2f;
+}
+
+.card-full-detail {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  place-items: center;
+  width: 20rem;
+  padding: 10px;
+  top: 0;
+  left: calc(100%);
+  z-index: 2;
+  opacity: 0;
+  transform: scale(0);
+}
+
+.card-full-detail:hover {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.lesson-container > .card-wrapper:hover + .card-full-detail {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.full-detail-content {
+  width: 90%;
+  height: 90%;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--section-bg-color);
+  text-align: right;
+  box-shadow: 0px 0px 5px 5px var(--box-shadow);
+}
+
+.card-full-detail-left {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  place-items: center;
+  width: 20rem;
+  padding: 10px;
+  top: 0;
+  right: calc(100%);
+  z-index: 2;
+  opacity: 0;
+  transform: scale(0);
+}
+
+.lesson-container > .card-wrapper:hover + .card-full-detail-left {
+  transform: scale(1);
+  opacity: 1;
+  transition: 250ms;
+}
+
+.card-full-detail-left:hover {
+  opacity: 1;
+  transform: scale(1);
 }

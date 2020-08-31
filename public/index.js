@@ -68,8 +68,7 @@ if (theme === null) {
 
 if (theme === "dark") {
   themBtn.dataset.mode = "light";
-}
-else {
+} else {
   themBtn.dataset.mode = "dark";
 }
 
@@ -80,7 +79,7 @@ themBtn.addEventListener("click", function () {
   } else {
     themBtn.dataset.mode = "light";
   }
-  setThem(mode)
+  setThem(mode);
 });
 
 function setThem(them_mode) {
@@ -171,9 +170,9 @@ const filter_dropdown_btn = document.querySelector(
 );
 const filter_container = document.querySelector(".filter-dropdown-container");
 const filter_active_btn = document.querySelector(".filter-extra-dropdown-btn");
-
+const s5 = document.querySelector(".s5");
 filter_dropdown_btn.addEventListener("click", () => {
-  filter_container.classList.toggle("d-none");
+  s5.classList.toggle("transform-position");
   filter_active_btn.classList.toggle("filter-extra-active-btn");
 });
 
