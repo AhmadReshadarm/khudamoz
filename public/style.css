@@ -3,6 +3,7 @@
   --secondText: #6e6d7a;
   --activeText: #0d0c22;
   --place-holder-text: #929199;
+  --green: #388d4e;
 
   --box-shadow: rgba(0, 0, 0, 0.082);
   --options-hover: #e7e7e9;
@@ -1117,6 +1118,9 @@ fieldset {
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-start;
+  border-radius: 3px;
+  padding: 2px;
+  background-color: var(--section-bg-color);
 }
 
 .rating svg {
@@ -1159,8 +1163,8 @@ fieldset {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
+  place-items: flex-end;
   background-color: var(--section-bg-color);
-  text-align: right;
   box-shadow: 0px 0px 5px 5px var(--box-shadow);
 }
 
@@ -1188,4 +1192,129 @@ fieldset {
 .card-full-detail-left:hover {
   opacity: 1;
   transform: scale(1);
+}
+
+.full-title h4 {
+  font-weight: 100;
+}
+
+.upload-date-best-class-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  place-items: center;
+}
+
+.upload-date {
+  margin-left: 10px;
+}
+
+.upload-date span {
+  color: var(--green);
+  font-size: 10px;
+  font-weight: 100;
+}
+
+.best-class {
+  padding: 2px 5px;
+  background-color: #eb8a2f;
+  border-radius: 3px;
+}
+.best-class span {
+  font-size: 10px;
+  font-weight: 100;
+  color: #7d3d00;
+}
+
+.hours-levels-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-starts;
+  padding: 5px 0;
+}
+
+.font-size-weight span {
+  font-size: 9px;
+  font-weight: 100;
+}
+
+.subtitle span::before {
+  content: "\25CF";
+  margin: 0 0.4rem;
+  font-size: 6px;
+  vertical-align: middle;
+}
+
+.difficulty-level span::before {
+  content: "\25CF";
+  margin: 0 0.4rem;
+  font-size: 6px;
+  vertical-align: middle;
+}
+
+.short-description {
+  text-align: right;
+  padding: 5px 0;
+}
+.short-description span {
+  font-size: 12px;
+  font-weight: 300;
+  text-align: right;
+}
+
+.futures-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  place-items: flex-start;
+  padding: 5px 0;
+}
+
+.futures-wrapper span {
+  font-size: 12px;
+  font-weight: 300;
+  text-align: right;
+}
+
+.futures-wrapper span::before {
+  content: "\25CF";
+  margin: 0 0 0 0.6rem;
+  font-size: 6px;
+  vertical-align: middle;
+}
+
+.button-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  place-items: center;
+  padding: 15px 0;
+}
+
+.fav-icon-full {
+  margin-left: 20px;
+  border: 1px solid var(--secondText);
+  border-radius: 50%;
+  padding: 10px;
+}
+.fav-icon-full:hover {
+  border: 1px solid var(--Btn);
+}
+.fav-icon-full:hover > svg path {
+  fill: var(--Btn);
+}
+
+.button-wrapper a {
+  padding: 10px 60px;
+  background-color: var(--Btn);
+  border-radius: 5px;
+}
+
+.button-wrapper a span {
+  color: var(--mainColor);
+}
+
+.button-wrapper a:hover {
+  background-color: var(--btnHover);
+  box-shadow: var(--box-shadow);
 }
