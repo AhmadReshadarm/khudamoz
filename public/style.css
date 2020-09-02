@@ -988,7 +988,7 @@ fieldset {
   content-visibility: auto;
   background-color: var(--mainColor);
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px 0;
@@ -1005,6 +1005,7 @@ fieldset {
   place-items: center;
   row-gap: 2rem;
   column-gap: 2rem;
+  padding-bottom: 20px;
 }
 
 @media only screen and (max-width: 1500px) {
@@ -1160,7 +1161,7 @@ fieldset {
   width: 90%;
   height: 90%;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 15px;
   display: flex;
   flex-direction: column;
   place-items: flex-end;
@@ -1317,4 +1318,109 @@ fieldset {
 .button-wrapper a:hover {
   background-color: var(--btnHover);
   box-shadow: var(--box-shadow);
+}
+
+.numbers-wrapper {
+  max-width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  place-items: center;
+  padding: 35px 0 0;
+}
+
+.previous-wrapper a {
+  border: 1px solid var(--secondText);
+  padding: 10px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  place-items: center;
+}
+
+.previous-wrapper a:hover {
+  border: 1px solid var(--btnHover);
+}
+
+.previous-wrapper a:hover > svg path {
+  fill: var(--btnHover);
+}
+
+.previous-wrapper a svg {
+  transform: rotate(90deg);
+  width: 20px;
+  height: 20px;
+}
+
+.previous-wrapper a svg path {
+  fill: var(--secondText);
+  transform: translate(0px, 2px);
+}
+
+.next-wrapper a {
+  border: 1px solid var(--secondText);
+  padding: 10px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  place-items: center;
+}
+
+.next-wrapper a:hover {
+  border: 1px solid var(--btnHover);
+}
+
+.next-wrapper a:hover > svg path {
+  fill: var(--btnHover);
+}
+
+.next-wrapper a svg {
+  transform: rotate(-90deg);
+  width: 20px;
+  height: 20px;
+}
+.next-wrapper a svg path {
+  fill: var(--secondText);
+  transform: translate(0px, 2px);
+}
+
+.numbers-content-wrapper {
+  max-width: 60%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  place-items: center;
+}
+
+.numbers-content-wrapper ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  position: relative;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.numbers-content-wrapper ul li a {
+  padding: 6px 8px;
+}
+
+.numbers-content-wrapper ul li a:hover > span {
+  color: var(--btnHover);
+}
+
+.active-page a span {
+  color: var(--Btn);
+}
+
+.active-page::after {
+  content: "";
+  display: block;
+  height: 0.2rem;
+  margin-top: 1px;
+  background: var(--Btn);
 }
