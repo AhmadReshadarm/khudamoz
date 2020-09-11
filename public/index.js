@@ -171,8 +171,14 @@ const filter_dropdown_btn = document.querySelector(
 const filter_container = document.querySelector(".filter-dropdown-container");
 const filter_active_btn = document.querySelector(".filter-extra-dropdown-btn");
 const s5 = document.querySelector(".s5");
+const s6 = document.querySelector(".s6");
+const s7 = document.querySelector(".s7");
+const s8 = document.querySelector(".s8");
 filter_dropdown_btn.addEventListener("click", () => {
   s5.classList.toggle("transform-position");
+  s6.classList.toggle("transform-position");
+  s7.classList.toggle("transform-position");
+  s8.classList.toggle("transform-position");
   filter_active_btn.classList.toggle("filter-extra-active-btn");
 });
 
