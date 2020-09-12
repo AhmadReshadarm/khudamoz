@@ -1620,6 +1620,41 @@ fieldset {
   fill: var(--mainColor);
 }
 
+/* .lang-btn-dropdown {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.lang-btn-dropdown-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 15px;
+  border-radius: 10px;
+  place-items: center;
+} */
+
+.lang-wrapper-btn-opt {
+  position: relative;
+}
+
+.lang-btn-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 15px;
+  gap: 15px;
+  border-radius: 10px;
+  place-items: center;
+}
+
+.lang_arrow {
+  width: 10px;
+  transform: rotate(180deg);
+}
+
 .lang_dropdown_opt {
   display: block;
   z-index: 2;
@@ -1632,10 +1667,6 @@ fieldset {
   padding: 0;
   margin: 5px 0 0 0;
   box-shadow: 0 0 5px 0px var(--box-shadow);
-}
-
-.lang_arrow {
-  transform: rotate(180deg);
 }
 
 .lang_dropdown_opt ul {
@@ -1653,8 +1684,8 @@ fieldset {
   margin: 0;
 }
 .lang_dropdown_opt ul li a {
-  padding: 5px 10px;
-  width: 100px;
+  padding: 8px 25px;
+  width: 110px;
   display: block;
   text-align: right;
 }
