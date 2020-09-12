@@ -1576,6 +1576,10 @@ fieldset {
   place-items: center;
 }
 
+.footer__social a {
+  height: 25px;
+}
+
 .footer__links {
   display: flex;
   flex-direction: column;
@@ -1599,18 +1603,9 @@ fieldset {
   grid-area: cta;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   place-items: flex-end;
-}
-
-.footer__cta a {
-  color: var(--mainColor);
-}
-
-.btn__login {
-  padding: 5px 15%;
-  background-color: var(--Btn);
-  border-radius: 5px;
+  transform: translateY(5px);
 }
 
 .footer__social svg path {
@@ -1623,4 +1618,47 @@ fieldset {
 }
 .social_icon_secondary {
   fill: var(--mainColor);
+}
+
+.lang_dropdown_opt {
+  display: block;
+  z-index: 2;
+  position: absolute;
+  right: 0;
+  bottom: calc(100% + 5px);
+  background-color: var(--mainColor);
+  border: 1px solid var(--box-shadow);
+  border-radius: 10px;
+  padding: 0;
+  margin: 5px 0 0 0;
+  box-shadow: 0 0 5px 0px var(--box-shadow);
+}
+
+.lang_arrow {
+  transform: rotate(180deg);
+}
+
+.lang_dropdown_opt ul {
+  min-width: 100px;
+  margin: 0;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  place-items: flex-end;
+}
+.lang_dropdown_opt ul li {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.lang_dropdown_opt ul li a {
+  padding: 5px 10px;
+  width: 100px;
+  display: block;
+  text-align: right;
+}
+
+.lang_dropdown_opt ul li a:hover {
+  background: var(--section-bg-color);
 }
