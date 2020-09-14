@@ -37,12 +37,12 @@ window.addEventListener("click", (e) => {
   }
 });
 
-const all_links = document.querySelectorAll("a");
-for (let i = 0; i < all_links.length; i++) {
-  all_links[i].addEventListener("click", (e) => {
-    e.preventDefault();
-  });
-}
+// const all_links = document.querySelectorAll("a");
+// for (let i = 0; i < all_links.length; i++) {
+//   all_links[i].addEventListener("click", (e) => {
+//     e.preventDefault();
+//   });
+// }
 
 btn_dropdown_animitaion.addEventListener("click", () => {
   btn_dropdown.classList.toggle("btn-arrow-open");

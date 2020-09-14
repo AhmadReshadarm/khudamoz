@@ -2,6 +2,7 @@
   --boldText: #333333;
   --secondText: #6e6d7a;
   --activeText: #0d0c22;
+  --selected-text: #0d0c22;
   --place-holder-text: #929199;
   --green: #388d4e;
 
@@ -20,6 +21,41 @@
 @font-face {
   font-family: Dirooz;
   src: url(./Dirooz.ttf);
+}
+
+.back-to-top {
+  display: block;
+  opacity: 0.5;
+  position: fixed;
+  bottom: 15px;
+  right: 20px;
+  z-index: 4;
+}
+
+.back-to-top:hover {
+  opacity: 1;
+}
+
+/* width */
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Track */
+*::-webkit-scrollbar-track {
+  background: var(--mainColor);
+}
+
+/* Handle */
+*::-webkit-scrollbar-thumb {
+  background: var(--Btn);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--btnHover);
 }
 
 * {
@@ -90,6 +126,7 @@ fieldset {
   border: none;
   outline: none;
   font-family: Dirooz;
+  background-color: transparent;
 }
 
 .d-none {
@@ -253,14 +290,14 @@ fieldset {
   border-radius: 5px;
   text-align: right;
   color: var(--boldText);
-  padding: 3% 10%;
+  padding: 5px 20px;
 }
 
 .main-search:active,
 .main-search:focus {
   background-size: 15%;
   background-color: var(--section-bg-color);
-  padding: 2.5% 15%;
+  padding: 5px 30px;
 }
 .main-search::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -284,16 +321,15 @@ fieldset {
   flex-direction: row;
   justify-content: flex-end;
   place-items: center;
-  width: 100%;
 }
 .nav-categories {
-  width: 100%;
   margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-evenly;
-  transform: translateX(30px);
+  justify-content: flex-start;
   place-items: center;
+  gap: 20px;
 }
 
 .header-category {
@@ -314,7 +350,7 @@ fieldset {
 
 .category-active a span {
   background-color: var(--textFieldColor);
-  color: var(--activeText);
+  color: var(--selected-text);
 }
 /* ------------------- Dark and Light mode button animation ----------------------- */
 .them-mood-wrapper {
@@ -637,11 +673,12 @@ fieldset {
 }
 
 .top-course-wrapper {
+  direction: rtl;
   background-color: var(--section-bg-color);
   border-radius: 10px;
   padding: 10px 0;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(7, 1fr);
   column-gap: 10px;
   justify-content: space-evenly;
 }
@@ -742,6 +779,12 @@ fieldset {
   justify-content: flex-start;
   position: relative;
 }
+
+.animation-btn {
+  width: 15px;
+  height: 15px;
+}
+
 .btn-dropdown-link {
   padding: 10px 15px;
   border-radius: 10px;
@@ -749,11 +792,6 @@ fieldset {
   flex-direction: row;
   justify-content: space-between;
   place-items: center;
-}
-
-.btn-dropdown a svg {
-  width: 10px;
-  padding: 0 5px;
 }
 
 .btn-dropdown a span {
@@ -867,7 +905,7 @@ fieldset {
   overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
-  max-width: 800px;
+  max-width: 1300px;
   width: 100%;
   scroll-behavior: smooth;
 }
@@ -875,6 +913,7 @@ fieldset {
 .category {
   display: inline-block;
   padding: 5px 10px;
+  margin-left: 10px;
   border-radius: 5px;
 }
 
@@ -884,7 +923,7 @@ fieldset {
 
 .category-active {
   background-color: var(--textFieldColor);
-  color: var(--activeText);
+  color: var(--selected-text);
 }
 
 .categories-wrapper::-webkit-scrollbar {
@@ -986,7 +1025,6 @@ fieldset {
 /* ------------------------------------ scetion 5 css --------------------------------------- */
 
 .s5 {
-  content-visibility: auto;
   background-color: var(--mainColor);
   display: flex;
   flex-direction: column;
@@ -1007,44 +1045,6 @@ fieldset {
   row-gap: 2rem;
   column-gap: 2rem;
   padding-bottom: 20px;
-}
-
-@media only screen and (max-width: 1500px) {
-  /* ----------------- utility ------------------- */
-
-  a,
-  p,
-  li,
-  span,
-  input,
-  textarea,
-  path {
-    font-size: 0.85rem;
-  }
-
-  /* ----------------section 5 ----------------- */
-  .section-5-wrapper {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-@media only screen and (max-width: 1330px) {
-  /* ----------------section 5 ----------------- */
-  .section-5-wrapper {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-@media only screen and (max-width: 945px) {
-  /* ----------------section 5 ----------------- */
-  .section-5-wrapper {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media only screen and (max-width: 620px) {
-  /* ----------------section 5 ----------------- */
-  .section-5-wrapper {
-    grid-template-columns: repeat(1, 1fr);
-  }
 }
 
 .lesson-container {
@@ -1620,22 +1620,6 @@ fieldset {
   fill: var(--mainColor);
 }
 
-/* .lang-btn-dropdown {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  position: relative;
-}
-
-.lang-btn-dropdown-link {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 10px 15px;
-  border-radius: 10px;
-  place-items: center;
-} */
-
 .lang-wrapper-btn-opt {
   position: relative;
 }
@@ -1692,4 +1676,147 @@ fieldset {
 
 .lang_dropdown_opt ul li a:hover {
   background: var(--section-bg-color);
+}
+
+.nav-menu-right-tablet {
+  display: none;
+}
+
+/* ---------------------------- Media querey --------------------- */
+
+/* ---------------- 4k media query ----------------------- */
+
+@media only screen and (max-width: 2500px) {
+  .categories-wrapper {
+    max-width: 1000px;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  /* ----------------- utility ------------------- */
+
+  a,
+  p,
+  li,
+  span,
+  input,
+  textarea,
+  path {
+    font-size: 0.85rem;
+  }
+
+  /* ----------------section 5 ----------------- */
+  .section-5-wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .categories-wrapper {
+    max-width: 800px;
+  }
+}
+
+@media only screen and (max-width: 1330px) {
+  /* ----------------section 5 ----------------- */
+  .section-5-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (max-width: 1200px) {
+  /* ----------------section 5 ----------------- */
+
+  /* ------------ utiliteis mobile ------------ */
+
+  a,
+  p,
+  li,
+  span,
+  input,
+  textarea,
+  path,
+  label {
+    font-size: 0.72rem;
+  }
+
+  .filter-catagory-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "pop filter"
+      "list list";
+  }
+
+  .filter-popular-dropdown {
+    grid-area: pop;
+  }
+
+  .filter-categories-section {
+    grid-area: list;
+    padding: 20px 0;
+  }
+
+  .filter-extra-dropdown-btn {
+    grid-area: filter;
+  }
+
+  .section-5-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .nav-menu-right {
+    display: none;
+  }
+
+  .nav-menu-right-tablet {
+    display: flex;
+    position: relative;
+  }
+
+  .nav-menu-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 8px 10px;
+    gap: 15px;
+    border-radius: 5px;
+    place-items: center;
+    position: relative;
+  }
+
+  .categories-wrapper {
+    max-width: 1000px;
+  }
+
+  .navigation-mobile {
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .section-5-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .top-course-wrapper {
+    display: block;
+    margin: 0;
+    padding: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    max-width: 1300px;
+    width: 100%;
+    scroll-behavior: smooth;
+  }
+
+  .course-item-wrapper {
+    display: inline-block;
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  /* ----------------section 5 ----------------- */
+  .section-5-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
