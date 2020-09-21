@@ -118,7 +118,7 @@ function setThem(them_mode) {
 const category_wrapper = document.querySelector(".categories-wrapper");
 const scroll_left_btn = document.querySelector(".scroll-left");
 const scroll_right_btn = document.querySelector(".scroll-right");
-const scroll_animat_btn = document.querySelectorAll(".scroll a svg");
+const scroll_animat_btn = document.querySelectorAll(".scroll");
 const scroll_step = 200;
 
 for (let i = 0; i < scroll_animat_btn.length; i++) {
