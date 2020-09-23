@@ -31,7 +31,7 @@ window.addEventListener("click", (e) => {
   ) {
     return;
   } else {
-    dropdown_options.classList.add("d-none");
+    dropdown_options.classList.remove("active");
     btn_dropdown.classList.remove("btn-arrow-open");
     search_clear_btn.classList.add("d-none");
   }
@@ -46,7 +46,7 @@ window.addEventListener("click", (e) => {
 
 btn_dropdown_animitaion.addEventListener("click", () => {
   btn_dropdown.classList.toggle("btn-arrow-open");
-  dropdown_options.classList.toggle("d-none");
+  dropdown_options.classList.toggle("active");
 });
 
 //--------------------------------------
