@@ -37,6 +37,18 @@ window.addEventListener("click", (e) => {
   }
 });
 
+
+// back to top button visibility
+
+window.onscroll = () => {
+  if (pageYOffset >= 800) {
+    document.getElementById("back_to_top").style.visibility = "visible";
+  } else {
+    document.getElementById("back_to_top").style.visibility = "hidden";
+  }
+}
+
+
 // const all_links = document.querySelectorAll("a");
 // for (let i = 0; i < all_links.length; i++) {
 //   all_links[i].addEventListener("click", (e) => {
