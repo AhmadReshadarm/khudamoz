@@ -115,14 +115,15 @@ path {
   cursor: default;
   border: none;
   fill: var(--secondText);
+  font-weight: 100;
+}
+
+.img-size {
+  width: 95%;
 }
 
 label {
   color: var(--activeText);
-}
-
-h2 {
-  font-size: 1.76vw;
 }
 
 ul,
@@ -990,7 +991,8 @@ fieldset {
 .filter-extra-dropdown-btn a {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-between;
+  place-items: center;
   gap: 15px;
   padding: 10px 20px;
   border-radius: 5px;
@@ -1133,6 +1135,8 @@ fieldset {
   justify-content: center;
   place-items: center;
   margin-top: -5px;
+  padding-right: 10px;
+  padding-left: 2px;
 }
 
 .fav-icon svg {
@@ -1572,30 +1576,6 @@ fieldset {
   text-align: right;
 }
 
-.t-hero-right a {
-  text-align: center;
-  background-color: var(--Btn);
-  color: var(--mainColor);
-  border-radius: 5px;
-  font-size: 1.125rem;
-  padding: 5px 0;
-  width: 35%;
-  white-space: nowrap;
-  -webkit-box-shadow: 0px 1px 2px 1px var(--box-shadow);
-  -moz-box-shadow: 0px 1px 2px 1px var(--box-shadow);
-  box-shadow: 0px 1px 2px 1px var(--box-shadow);
-}
-
-.t-hero-right a:hover {
-  background-color: var(--btnHover);
-}
-
-.t-hero-right a:active {
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-}
-
 /* ----------------------------- section 8 footer ----------------------- */
 
 .s8 {
@@ -1850,6 +1830,10 @@ fieldset {
   .navigation-mobile {
     justify-content: space-between;
   }
+
+  .t-hero-right p {
+    white-space: normal;
+  }
 }
 
 @media only screen and (max-width: 950px) {
@@ -1866,8 +1850,12 @@ fieldset {
   textarea,
   path,
   label {
-    font-weight: 100;
     font-size: 0.75rem;
+  }
+
+  .intro-detial {
+    white-space: normal;
+    padding: 25px 0;
   }
 
   .transform-position {
@@ -2062,7 +2050,7 @@ fieldset {
   }
 
   .animation-btn {
-    height: 12px;
+    height: 10px;
   }
 
   .filter-extra-dropdown-btn a {
@@ -2130,6 +2118,11 @@ fieldset {
 }
 
 @media only screen and (max-width: 620px) {
+  h2 {
+    font-size: 1rem;
+    font-weight: 100;
+  }
+
   .img-size {
     width: 100%;
   }
@@ -2180,17 +2173,27 @@ fieldset {
 }
 
 @media only screen and (max-width: 375px) {
+  a,
+  p,
+  li,
+  span,
+  input,
+  textarea,
+  path,
+  label {
+    font-size: 0.625rem;
+  }
   .intro-title {
     font-size: 1.7rem;
-  }
-
-  .intro-detial {
-    font-size: 0.625rem;
   }
 
   .intro-action-btn {
     width: 60%;
     white-space: nowrap;
+  }
+
+  .intro-detial {
+    white-space: normal;
   }
 
   .numbers-wrapper {
@@ -2208,10 +2211,6 @@ fieldset {
 
   .t-hero-right h1 {
     font-size: 1.7rem;
-  }
-
-  .t-hero-right a {
-    width: 50%;
   }
 }
 

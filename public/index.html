@@ -1,1054 +1,1388 @@
 <!DOCTYPE html>
 <html lang="fa">
+  <head>
+    <script src="https://use.fontawesome.com/4539cb79cc.js"></script>
+    <meta charset="UTF-8" />
+    <meta
+      dir="rtl"
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link type="text/css" rel="stylesheet" href="./style.css" />
+    <link type="text/css" id="them-style" rel="stylesheet" href="" />
+    <title>Khud Amooz</title>
+  </head>
 
-<head>
-  <script src="https://use.fontawesome.com/4539cb79cc.js"></script>
-  <meta charset="UTF-8" />
-  <meta dir="rtl" name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
-  <link type="text/css" rel="stylesheet" href="./style.css" />
-  <link type="text/css" id="them-style" rel="stylesheet" href="" />
-  <title>Khud Amooz</title>
-</head>
-
-<body>
-  <section class="s1 d-none full-width">
-    <!-- top section header  -->
-    <div class="top full-width">
-      <div class="navigation full-width">
-        <!-- Left side -->
-        <div class="left-nav full-width">
-          <a class="logo-wrapper" href="/">
-            <img id="logo" src="./undraw_logo_design_bjnx.svg" alt="khud Amooz logo" />
-          </a>
-        </div>
-        <!-- Right side  -->
-        <div class="right-nav full-width">
-          <div class="t-auth-btn-wrapper">
-            <a href="#" class="t-auth-btn"><span>آموزگار خودآموز باشید</span></a>
+  <body>
+    <section class="s1 full-width">
+      <!-- top section header  -->
+      <div class="top full-width">
+        <div class="navigation full-width">
+          <!-- Left side -->
+          <div class="left-nav full-width">
+            <a class="logo-wrapper" href="/">
+              <img
+                id="logo"
+                src="./undraw_logo_design_bjnx.svg"
+                alt="khud Amooz logo"
+              />
+            </a>
           </div>
-          <div class="s-auth-btn">
-            <a href="#" class="logIn" id="login"><span>ورود</span></a>
-            <a href="#" class="signUp" id="signup"><span>ثبت نام</span></a>
-          </div>
-          <div data-mode="light" class="them-mood-wrapper">
-            <div id="animation-circle"></div>
-            <div id="them-mode-outer" class="sun-light"></div>
-            <button id="them-mode-inner" class="sun"></button>
+          <!-- Right side  -->
+          <div class="right-nav full-width">
+            <div class="t-auth-btn-wrapper">
+              <a href="#" class="t-auth-btn"
+                ><span>آموزگار خودآموز باشید</span></a
+              >
+            </div>
+            <div class="s-auth-btn">
+              <a href="#" class="logIn" id="login"><span>ورود</span></a>
+              <a href="#" class="signUp" id="signup"><span>ثبت نام</span></a>
+            </div>
+            <div data-mode="light" class="them-mood-wrapper">
+              <div id="animation-circle"></div>
+              <div id="them-mode-outer" class="sun-light"></div>
+              <button id="them-mode-inner" class="sun"></button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- bottom section header  -->
-    <div class="buttom full-width">
-      <div class="navigation navigation-mobile full-width">
-        <!-- left side  -->
-        <div class="left-bottom-nav">
-          <form class="search" action="">
-            <input dir="rtl" type="text" placeholder="جستجو آموزش" name="search" id="main-search"
-              class="main-search outline" />
-          </form>
-        </div>
-        <!-- right side  -->
-        <div class="nav-menu-right full-width">
-          <ul class="nav-categories full-width">
-            <li class="header-category">
-              <a href="#"><span>کمپیوتر ساینس</span></a>
-            </li>
-            <li class="header-category">
-              <a href="#"><span>اقتصاد و حسابداری</span></a>
-            </li>
-            <li class="header-category">
-              <a href="#"><span>بازار یابی</span></a>
-            </li>
-            <li class="header-category">
-              <a href="#"><span>دروس مکتب</span></a>
-            </li>
-            <li class="header-category">
-              <a href="#"><span>آموزش ورزش</span></a>
-            </li>
-            <li class="header-category">
-              <a href="#"><span>گرافیک</span></a>
-            </li>
-            <li class="header-category">
-              <a href="#"><span>عکاسی</span></a>
-            </li>
-            <li class="header-category">
-              <a href="#"><span>بزنس</span></a>
-            </li>
-            <li class="header-category">
-              <a href="#"><span>بیشتر</span></a>
-            </li>
-          </ul>
-        </div>
-        <div class="nav-menu-right-tablet">
-          <a class="nav-menu-btn outline" href="#menu_mobile">
-            <svg width="24" height="24" viewBox="0 0 24 24" role="img" style="width: 8px; height: 8px">
-              <path
-                d="M21.5265 8.77171C22.1578 8.13764 22.1578 7.10962 21.5265 6.47555C20.8951 5.84148 19.8714 5.84148 19.24 6.47555L11.9999 13.7465L4.75996 6.47573C4.12858 5.84166 3.10492 5.84166 2.47354 6.47573C1.84215 7.10979 1.84215 8.13782 2.47354 8.77188L10.8332 17.1671C10.8408 17.1751 10.8486 17.183 10.8565 17.1909C11.0636 17.399 11.313 17.5388 11.577 17.6103C11.5834 17.6121 11.5899 17.6138 11.5964 17.6154C12.132 17.7536 12.7242 17.6122 13.1435 17.1911C13.1539 17.1807 13.1641 17.1702 13.1742 17.1596L21.5265 8.77171Z">
-              </path>
-            </svg>
-            <span>لیست آموزش ها</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- ------------ section 2 ----------------- -->
-  <section class="s2 full-width">
-    <div class="s2-wrapper full-width">
-      <div class="intro-column full-width">
-        <!-- ------------- left side section 2 ------------ -->
-        <div class="left-column-intro">
-          <img class="img-size" src="./undraw_book_lover_mkck.svg" alt="girl reading books" />
-        </div>
-        <!-- ------------ right side section 2 ---------------- -->
-        <div class="right-column-intro full-width">
-          <div class="intro-wrapper full-width">
-            <h1 class="intro-title">
-              خودآموز دریچه ای <br />
-              برای فردای بهتر
-            </h1>
-            <p class="intro-detial">
-              آموزش حرفه ایی را با خودآموز تجربه نمایید
-              خود آموز با بیش از هزاران آموزش در تمام عرصه های
-              آموزشی و اساتید با تجربه در خدمت تمام دانشجویان و دانش
-              پروران عزیز قرار دارد
-            </p>
-            <a href="#" class="intro-action-btn outline">شروع یادگیری رایگان</a>
+      <!-- bottom section header  -->
+      <div class="buttom full-width">
+        <div class="navigation navigation-mobile full-width">
+          <!-- left side  -->
+          <div class="left-bottom-nav">
+            <form class="search" action="">
+              <input
+                dir="rtl"
+                type="text"
+                placeholder="جستجو آموزش"
+                name="search"
+                id="main-search"
+                class="main-search outline"
+              />
+            </form>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- ------------ section 3 ----------- -->
-  <section class="s3 full-width">
-    <div class="s3-wrapper full-width">
-      <div class="top-course-column full-width">
-        <div class="top-course-title-wrapper">
-          <h2 class="top-course-header">موضوعات برتر</h2>
-        </div>
-        <div class="top-course-wrapper">
-          <a href="#" class="course-item-wrapper">
-            <div class="course-img-wrapper outline">
-              <img src="./undraw_pair_programming_njlp.svg" class="course-thumbnail" alt="course title thumbnail" />
-            </div>
-            <div class="course-title-wrapper">
-              <h5 class="top-course-title">عنوان موضوع برتر</h5>
-            </div>
-          </a>
-          <a href="#" class="course-item-wrapper">
-            <div class="course-img-wrapper outline">
-              <img src="./undraw_pair_programming_njlp.svg" class="course-thumbnail" alt="course title thumbnail" />
-            </div>
-            <div class="course-title-wrapper">
-              <h5 class="top-course-title">عنوان موضوع برتر</h5>
-            </div>
-          </a>
-          <a href="#" class="course-item-wrapper">
-            <div class="course-img-wrapper outline">
-              <img src="./undraw_pair_programming_njlp.svg" class="course-thumbnail" alt="course title thumbnail" />
-            </div>
-            <div class="course-title-wrapper">
-              <h5 class="top-course-title">عنوان موضوع برتر</h5>
-            </div>
-          </a>
-          <a href="#" class="course-item-wrapper">
-            <div class="course-img-wrapper outline">
-              <img src="./undraw_pair_programming_njlp.svg" class="course-thumbnail" alt="course title thumbnail" />
-            </div>
-            <div class="course-title-wrapper">
-              <h5 class="top-course-title">عنوان موضوع برتر</h5>
-            </div>
-          </a>
-          <a href="#" class="course-item-wrapper">
-            <div class="course-img-wrapper outline">
-              <img src="./undraw_pair_programming_njlp.svg" class="course-thumbnail" alt="course title thumbnail" />
-            </div>
-            <div class="course-title-wrapper">
-              <h5 class="top-course-title">عنوان موضوع برتر</h5>
-            </div>
-          </a>
-          <a href="#" class="course-item-wrapper">
-            <div class="course-img-wrapper outline">
-              <img src="./undraw_pair_programming_njlp.svg" class="course-thumbnail" alt="course title thumbnail" />
-            </div>
-            <div class="course-title-wrapper">
-              <h5 class="top-course-title">عنوان موضوع برتر</h5>
-            </div>
-          </a>
-          <a href="#" class="course-item-wrapper">
-            <div class="course-img-wrapper outline">
-              <img src="./undraw_pair_programming_njlp.svg" class="course-thumbnail" alt="course title thumbnail" />
-            </div>
-            <div class="course-title-wrapper">
-              <h5 class="top-course-title">عنوان موضوع برتر</h5>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- ------------------------ section 4 ---------------------- -->
-  <section class="s4 full-width">
-    <div id="menu_mobile" class="s4-wrapper full-width">
-      <div class="filters-wrapper full-width">
-        <div class="filter-title full-width">
-          <h2>جستجو آموزش ها با فیلتر</h2>
-        </div>
-        <div class="filter-catagory-container full-width">
-          <div class="filter-popular-dropdown flex-grow-1">
-            <span class="btn-dropdown full-width">
-              <button class="outline btn-dropdown-link pop_btn">
-                <svg class="animation-btn" width="24" height="24" viewBox="0 0 24 24" role="img">
-                  <path
-                    d="M21.5265 8.77171C22.1578 8.13764 22.1578 7.10962 21.5265 6.47555C20.8951 5.84148 19.8714 5.84148 19.24 6.47555L11.9999 13.7465L4.75996 6.47573C4.12858 5.84166 3.10492 5.84166 2.47354 6.47573C1.84215 7.10979 1.84215 8.13782 2.47354 8.77188L10.8332 17.1671C10.8408 17.1751 10.8486 17.183 10.8565 17.1909C11.0636 17.399 11.313 17.5388 11.577 17.6103C11.5834 17.6121 11.5899 17.6138 11.5964 17.6154C12.132 17.7536 12.7242 17.6122 13.1435 17.1911C13.1539 17.1807 13.1641 17.1702 13.1742 17.1596L21.5265 8.77171Z">
-                  </path>
-                </svg>
-                <span style="white-space: nowrap">پر بیننده ترین ها</span>
-              </button>
-              <div class="btn-dropdown-options">
-                <ul>
-                  <li><a class="isActive" href="#">پر بیننده ترین ها</a></li>
-                  <li><a class="notActive" href="#">رتبه بالا</a></li>
-                  <li><a class="notActive" href="#">جدیدترین ها</a></li>
-                </ul>
-              </div>
-            </span>
-          </div>
-          <div class="filter-categories-section">
-            <span class="scroll scroll-left"><a><svg class="scroll-btn" width="24" height="24" viewBox="0 0 24 24"
-                  role="img">
-                  <path
-                    d="M21.5265 8.77171C22.1578 8.13764 22.1578 7.10962 21.5265 6.47555C20.8951 5.84148 19.8714 5.84148 19.24 6.47555L11.9999 13.7465L4.75996 6.47573C4.12858 5.84166 3.10492 5.84166 2.47354 6.47573C1.84215 7.10979 1.84215 8.13782 2.47354 8.77188L10.8332 17.1671C10.8408 17.1751 10.8486 17.183 10.8565 17.1909C11.0636 17.399 11.313 17.5388 11.577 17.6103C11.5834 17.6121 11.5899 17.6138 11.5964 17.6154C12.132 17.7536 12.7242 17.6122 13.1435 17.1911C13.1539 17.1807 13.1641 17.1702 13.1742 17.1596L21.5265 8.77171Z">
-                  </path>
-                </svg></a></span>
-            <span class="scroll scroll-right d-none"><a><svg class="scroll-btn" width="24" height="24"
-                  viewBox="0 0 24 24" role="img">
-                  <path
-                    d="M21.5265 8.77171C22.1578 8.13764 22.1578 7.10962 21.5265 6.47555C20.8951 5.84148 19.8714 5.84148 19.24 6.47555L11.9999 13.7465L4.75996 6.47573C4.12858 5.84166 3.10492 5.84166 2.47354 6.47573C1.84215 7.10979 1.84215 8.13782 2.47354 8.77188L10.8332 17.1671C10.8408 17.1751 10.8486 17.183 10.8565 17.1909C11.0636 17.399 11.313 17.5388 11.577 17.6103C11.5834 17.6121 11.5899 17.6138 11.5964 17.6154C12.132 17.7536 12.7242 17.6122 13.1435 17.1911C13.1539 17.1807 13.1641 17.1702 13.1742 17.1596L21.5265 8.77171Z">
-                  </path>
-                </svg></a></span>
-            <ul dir="rtl" class="categories-wrapper">
-              <li class="category"><a href="#">کمپیوتر ساینس</a></li>
-              <li class="category"><a href="#">اقتصاد و حسابداری</a></li>
-              <li class="category"><a href="#">بازاریابی</a></li>
-              <li class="category"><a href="#">دورس مکتب</a></li>
-              <li class="category"><a href="#">طراحی و گرافیک</a></li>
-              <li class="category"><a href="#">انجینری</a></li>
-              <li class="category"><a href="#">آموزش های عمومی</a></li>
-              <li class="category"><a href="#">هنرها</a></li>
-              <li class="category"><a href="#">برنامه نویسی</a></li>
-              <li class="category"><a href="#">هوش مصنوعی</a></li>
-              <li class="category"><a href="#">آموزش های تخصصی</a></li>
-              <li class="category"><a href="#">موسیقی</a></li>
-              <li class="category"><a href="#">روان شناسی</a></li>
-              <li class="category"><a href="#">هوش مصنوعی</a></li>
-              <li class="category"><a href="#">آموزش های تخصصی</a></li>
-              <li class="category"><a href="#">موسیقی</a></li>
-              <li class="category"><a href="#">روان شناسی</a></li>
+          <!-- right side  -->
+          <div class="nav-menu-right full-width">
+            <ul class="nav-categories full-width">
+              <li class="header-category">
+                <a href="#"><span>کمپیوتر ساینس</span></a>
+              </li>
+              <li class="header-category">
+                <a href="#"><span>اقتصاد و حسابداری</span></a>
+              </li>
+              <li class="header-category">
+                <a href="#"><span>بازار یابی</span></a>
+              </li>
+              <li class="header-category">
+                <a href="#"><span>دروس مکتب</span></a>
+              </li>
+              <li class="header-category">
+                <a href="#"><span>آموزش ورزش</span></a>
+              </li>
+              <li class="header-category">
+                <a href="#"><span>گرافیک</span></a>
+              </li>
+              <li class="header-category">
+                <a href="#"><span>عکاسی</span></a>
+              </li>
+              <li class="header-category">
+                <a href="#"><span>بزنس</span></a>
+              </li>
+              <li class="header-category">
+                <a href="#"><span>بیشتر</span></a>
+              </li>
             </ul>
           </div>
-          <div class="filter-extra-dropdown-btn flex-grow-1">
-            <a>
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" role="img"
-                class="icon">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M0 6C0 5.17157 0.671573 4.5 1.5 4.5H22.5C23.3284 4.5 24 5.17157 24 6C24 6.82843 23.3284 7.5 22.5 7.5H1.5C0.671573 7.5 0 6.82843 0 6ZM3 12C3 11.1716 3.67157 10.5 4.5 10.5H19.5C20.3284 10.5 21 11.1716 21 12C21 12.8284 20.3284 13.5 19.5 13.5H4.5C3.67157 13.5 3 12.8284 3 12ZM7.5 16.5C6.67157 16.5 6 17.1716 6 18C6 18.8284 6.67157 19.5 7.5 19.5H16.5C17.3284 19.5 18 18.8284 18 18C18 17.1716 17.3284 16.5 16.5 16.5H7.5Z">
-                </path>
+          <div class="nav-menu-right-tablet">
+            <a class="nav-menu-btn outline" href="#menu_mobile">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                role="img"
+                style="width: 8px; height: 8px"
+              >
+                <path
+                  d="M21.5265 8.77171C22.1578 8.13764 22.1578 7.10962 21.5265 6.47555C20.8951 5.84148 19.8714 5.84148 19.24 6.47555L11.9999 13.7465L4.75996 6.47573C4.12858 5.84166 3.10492 5.84166 2.47354 6.47573C1.84215 7.10979 1.84215 8.13782 2.47354 8.77188L10.8332 17.1671C10.8408 17.1751 10.8486 17.183 10.8565 17.1909C11.0636 17.399 11.313 17.5388 11.577 17.6103C11.5834 17.6121 11.5899 17.6138 11.5964 17.6154C12.132 17.7536 12.7242 17.6122 13.1435 17.1911C13.1539 17.1807 13.1641 17.1702 13.1742 17.1596L21.5265 8.77171Z"
+                ></path>
               </svg>
-              <span>فیلتر</span>
+              <span>لیست آموزش ها</span>
             </a>
           </div>
         </div>
-
-        <!-- ---------------------------------- section 4 filter part -------------------------------- -->
-
-        <form class="filter-dropdown-container full-width" action="">
-          <fieldset class="flex-grow-1 search-wrapper">
-            <div class="filter-tag-wrapper">
-              <a class="d-none search-clear">پاک کردن</a>
-              <label>تگ ها</label>
+      </div>
+    </section>
+    <!-- ------------ section 2 ----------------- -->
+    <section class="s2 full-width">
+      <div class="s2-wrapper full-width">
+        <div class="intro-column full-width">
+          <!-- ------------- left side section 2 ------------ -->
+          <div class="left-column-intro">
+            <img
+              class="img-size"
+              src="./undraw_book_lover_mkck.svg"
+              alt="girl reading books"
+            />
+          </div>
+          <!-- ------------ right side section 2 ---------------- -->
+          <div class="right-column-intro full-width">
+            <div class="intro-wrapper full-width">
+              <h1 class="intro-title">
+                خودآموز دریچه ای <br />
+                برای فردای بهتر
+              </h1>
+              <p class="intro-detial">
+                آموزش حرفه ایی را با خودآموز تجربه نمایید خود آموز با بیش از
+                هزاران آموزش در تمام عرصه های آموزشی و اساتید با تجربه در خدمت
+                تمام دانشجویان و دانش پروران عزیز قرار دارد
+              </p>
+              <a href="#" class="intro-action-btn outline"
+                >شروع یادگیری رایگان</a
+              >
             </div>
-            <div>
-              <input dir="rtl" type="text" placeholder="جستجو آموزش" value=""
-                class="filter-search full-width js-main-search outline" />
-            </div>
-          </fieldset>
-          <fieldset class="flex-grow-1 lang-wrapper">
-            <div class="filter-tag-wrapper">
-              <a class="d-none lang-clear" href="#">پاک کردن</a>
-              <label>زبان</label>
-            </div>
-            <div class="filter-lang-dropdown">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ------------ section 3 ----------- -->
+    <section class="s3 full-width">
+      <div class="s3-wrapper full-width">
+        <div class="top-course-column full-width">
+          <div class="top-course-title-wrapper">
+            <h2 class="top-course-header">موضوعات برتر</h2>
+          </div>
+          <div class="top-course-wrapper">
+            <a href="#" class="course-item-wrapper">
+              <div class="course-img-wrapper outline">
+                <img
+                  src="./undraw_pair_programming_njlp.svg"
+                  class="course-thumbnail"
+                  alt="course title thumbnail"
+                />
+              </div>
+              <div class="course-title-wrapper">
+                <h5 class="top-course-title">عنوان موضوع برتر</h5>
+              </div>
+            </a>
+            <a href="#" class="course-item-wrapper">
+              <div class="course-img-wrapper outline">
+                <img
+                  src="./undraw_pair_programming_njlp.svg"
+                  class="course-thumbnail"
+                  alt="course title thumbnail"
+                />
+              </div>
+              <div class="course-title-wrapper">
+                <h5 class="top-course-title">عنوان موضوع برتر</h5>
+              </div>
+            </a>
+            <a href="#" class="course-item-wrapper">
+              <div class="course-img-wrapper outline">
+                <img
+                  src="./undraw_pair_programming_njlp.svg"
+                  class="course-thumbnail"
+                  alt="course title thumbnail"
+                />
+              </div>
+              <div class="course-title-wrapper">
+                <h5 class="top-course-title">عنوان موضوع برتر</h5>
+              </div>
+            </a>
+            <a href="#" class="course-item-wrapper">
+              <div class="course-img-wrapper outline">
+                <img
+                  src="./undraw_pair_programming_njlp.svg"
+                  class="course-thumbnail"
+                  alt="course title thumbnail"
+                />
+              </div>
+              <div class="course-title-wrapper">
+                <h5 class="top-course-title">عنوان موضوع برتر</h5>
+              </div>
+            </a>
+            <a href="#" class="course-item-wrapper">
+              <div class="course-img-wrapper outline">
+                <img
+                  src="./undraw_pair_programming_njlp.svg"
+                  class="course-thumbnail"
+                  alt="course title thumbnail"
+                />
+              </div>
+              <div class="course-title-wrapper">
+                <h5 class="top-course-title">عنوان موضوع برتر</h5>
+              </div>
+            </a>
+            <a href="#" class="course-item-wrapper">
+              <div class="course-img-wrapper outline">
+                <img
+                  src="./undraw_pair_programming_njlp.svg"
+                  class="course-thumbnail"
+                  alt="course title thumbnail"
+                />
+              </div>
+              <div class="course-title-wrapper">
+                <h5 class="top-course-title">عنوان موضوع برتر</h5>
+              </div>
+            </a>
+            <a href="#" class="course-item-wrapper">
+              <div class="course-img-wrapper outline">
+                <img
+                  src="./undraw_pair_programming_njlp.svg"
+                  class="course-thumbnail"
+                  alt="course title thumbnail"
+                />
+              </div>
+              <div class="course-title-wrapper">
+                <h5 class="top-course-title">عنوان موضوع برتر</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ------------------------ section 4 ---------------------- -->
+    <section class="s4 full-width">
+      <div id="menu_mobile" class="s4-wrapper full-width">
+        <div class="filters-wrapper full-width">
+          <div class="filter-title full-width">
+            <h2>جستجو آموزش ها با فیلتر</h2>
+          </div>
+          <div class="filter-catagory-container full-width">
+            <div class="filter-popular-dropdown flex-grow-1">
               <span class="btn-dropdown full-width">
-                <a class="outline btn-dropdown-link full-width" href="#">
-                  <svg class="animation-btn" width="24" height="24" viewBox="0 0 24 24" role="img">
+                <button class="outline btn-dropdown-link pop_btn">
+                  <svg
+                    class="animation-btn"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    role="img"
+                  >
                     <path
-                      d="M21.5265 8.77171C22.1578 8.13764 22.1578 7.10962 21.5265 6.47555C20.8951 5.84148 19.8714 5.84148 19.24 6.47555L11.9999 13.7465L4.75996 6.47573C4.12858 5.84166 3.10492 5.84166 2.47354 6.47573C1.84215 7.10979 1.84215 8.13782 2.47354 8.77188L10.8332 17.1671C10.8408 17.1751 10.8486 17.183 10.8565 17.1909C11.0636 17.399 11.313 17.5388 11.577 17.6103C11.5834 17.6121 11.5899 17.6138 11.5964 17.6154C12.132 17.7536 12.7242 17.6122 13.1435 17.1911C13.1539 17.1807 13.1641 17.1702 13.1742 17.1596L21.5265 8.77171Z">
-                    </path>
+                      d="M21.5265 8.77171C22.1578 8.13764 22.1578 7.10962 21.5265 6.47555C20.8951 5.84148 19.8714 5.84148 19.24 6.47555L11.9999 13.7465L4.75996 6.47573C4.12858 5.84166 3.10492 5.84166 2.47354 6.47573C1.84215 7.10979 1.84215 8.13782 2.47354 8.77188L10.8332 17.1671C10.8408 17.1751 10.8486 17.183 10.8565 17.1909C11.0636 17.399 11.313 17.5388 11.577 17.6103C11.5834 17.6121 11.5899 17.6138 11.5964 17.6154C12.132 17.7536 12.7242 17.6122 13.1435 17.1911C13.1539 17.1807 13.1641 17.1702 13.1742 17.1596L21.5265 8.77171Z"
+                    ></path>
                   </svg>
-                  <span>دری</span>
-                </a>
-                <div class="btn-dropdown-options d-none">
+                  <span style="white-space: nowrap">پر بیننده ترین ها</span>
+                </button>
+                <div class="btn-dropdown-options">
                   <ul>
-                    <li>
-                      <a class="isActive" href="#">دری</a>
-                    </li>
-                    <li><a class="notActive" href="#">پشتو</a></li>
-                    <li><a class="notActive" href="#">انگلیسی</a></li>
+                    <li><a class="isActive" href="#">پر بیننده ترین ها</a></li>
+                    <li><a class="notActive" href="#">رتبه بالا</a></li>
+                    <li><a class="notActive" href="#">جدیدترین ها</a></li>
                   </ul>
                 </div>
               </span>
             </div>
-          </fieldset>
-          <fieldset class="flex-grow-1 lang-wrapper">
-            <div class="filter-tag-wrapper">
-              <a class="d-none lang-clear" href="#">پاک کردن</a>
-              <label>سطح سویه</label>
-            </div>
-            <div class="filter-lang-dropdown">
-              <span class="btn-dropdown full-width">
-                <a class="outline btn-dropdown-link full-width" href="#">
-                  <svg class="animation-btn" width="24" height="24" viewBox="0 0 24 24" role="img">
+            <div class="filter-categories-section">
+              <span class="scroll scroll-left"
+                ><a
+                  ><svg
+                    class="scroll-btn"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    role="img"
+                  >
                     <path
-                      d="M21.5265 8.77171C22.1578 8.13764 22.1578 7.10962 21.5265 6.47555C20.8951 5.84148 19.8714 5.84148 19.24 6.47555L11.9999 13.7465L4.75996 6.47573C4.12858 5.84166 3.10492 5.84166 2.47354 6.47573C1.84215 7.10979 1.84215 8.13782 2.47354 8.77188L10.8332 17.1671C10.8408 17.1751 10.8486 17.183 10.8565 17.1909C11.0636 17.399 11.313 17.5388 11.577 17.6103C11.5834 17.6121 11.5899 17.6138 11.5964 17.6154C12.132 17.7536 12.7242 17.6122 13.1435 17.1911C13.1539 17.1807 13.1641 17.1702 13.1742 17.1596L21.5265 8.77171Z">
-                    </path>
-                  </svg>
-                  <span>ابتدایی</span>
-                </a>
-                <div class="btn-dropdown-options d-none">
-                  <ul>
-                    <li>
-                      <a class="isActive" href="#">ابتدایی</a>
-                    </li>
-                    <li><a class="notActive" href="#">متوسط</a></li>
-                    <li><a class="notActive" href="#">حرفه ایی</a></li>
-                  </ul>
-                </div>
-              </span>
-            </div>
-          </fieldset>
-          <fieldset class="flex-grow-1 lang-wrapper">
-            <div class="filter-tag-wrapper">
-              <a class="d-none lang-clear" href="#">پاک کردن</a>
-              <label>زمان آموزش</label>
-            </div>
-            <div class="filter-lang-dropdown">
-              <span class="btn-dropdown full-width">
-                <a class="outline btn-dropdown-link full-width" href="#">
-                  <svg class="animation-btn" width="24" height="24" viewBox="0 0 24 24" role="img">
+                      d="M21.5265 8.77171C22.1578 8.13764 22.1578 7.10962 21.5265 6.47555C20.8951 5.84148 19.8714 5.84148 19.24 6.47555L11.9999 13.7465L4.75996 6.47573C4.12858 5.84166 3.10492 5.84166 2.47354 6.47573C1.84215 7.10979 1.84215 8.13782 2.47354 8.77188L10.8332 17.1671C10.8408 17.1751 10.8486 17.183 10.8565 17.1909C11.0636 17.399 11.313 17.5388 11.577 17.6103C11.5834 17.6121 11.5899 17.6138 11.5964 17.6154C12.132 17.7536 12.7242 17.6122 13.1435 17.1911C13.1539 17.1807 13.1641 17.1702 13.1742 17.1596L21.5265 8.77171Z"
+                    ></path></svg></a
+              ></span>
+              <span class="scroll scroll-right d-none"
+                ><a
+                  ><svg
+                    class="scroll-btn"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    role="img"
+                  >
                     <path
-                      d="M21.5265 8.77171C22.1578 8.13764 22.1578 7.10962 21.5265 6.47555C20.8951 5.84148 19.8714 5.84148 19.24 6.47555L11.9999 13.7465L4.75996 6.47573C4.12858 5.84166 3.10492 5.84166 2.47354 6.47573C1.84215 7.10979 1.84215 8.13782 2.47354 8.77188L10.8332 17.1671C10.8408 17.1751 10.8486 17.183 10.8565 17.1909C11.0636 17.399 11.313 17.5388 11.577 17.6103C11.5834 17.6121 11.5899 17.6138 11.5964 17.6154C12.132 17.7536 12.7242 17.6122 13.1435 17.1911C13.1539 17.1807 13.1641 17.1702 13.1742 17.1596L21.5265 8.77171Z">
-                    </path>
-                  </svg>
-                  <span>2+</span>
-                </a>
-                <div class="btn-dropdown-options d-none">
-                  <ul>
-                    <li>
-                      <a class="isActive" href="#">3+</a>
-                    </li>
-                    <li><a class="notActive" href="#">4+</a></li>
-                    <li><a class="notActive" href="#">5+</a></li>
-                    <li><a class="notActive" href="#">7+</a></li>
-                    <li><a class="notActive" href="#">10+</a></li>
-                    <li><a class="notActive" href="#">12+</a></li>
-                  </ul>
-                </div>
-              </span>
+                      d="M21.5265 8.77171C22.1578 8.13764 22.1578 7.10962 21.5265 6.47555C20.8951 5.84148 19.8714 5.84148 19.24 6.47555L11.9999 13.7465L4.75996 6.47573C4.12858 5.84166 3.10492 5.84166 2.47354 6.47573C1.84215 7.10979 1.84215 8.13782 2.47354 8.77188L10.8332 17.1671C10.8408 17.1751 10.8486 17.183 10.8565 17.1909C11.0636 17.399 11.313 17.5388 11.577 17.6103C11.5834 17.6121 11.5899 17.6138 11.5964 17.6154C12.132 17.7536 12.7242 17.6122 13.1435 17.1911C13.1539 17.1807 13.1641 17.1702 13.1742 17.1596L21.5265 8.77171Z"
+                    ></path></svg></a
+              ></span>
+              <ul dir="rtl" class="categories-wrapper">
+                <li class="category"><a href="#">کمپیوتر ساینس</a></li>
+                <li class="category"><a href="#">اقتصاد و حسابداری</a></li>
+                <li class="category"><a href="#">بازاریابی</a></li>
+                <li class="category"><a href="#">دورس مکتب</a></li>
+                <li class="category"><a href="#">طراحی و گرافیک</a></li>
+                <li class="category"><a href="#">انجینری</a></li>
+                <li class="category"><a href="#">آموزش های عمومی</a></li>
+                <li class="category"><a href="#">هنرها</a></li>
+                <li class="category"><a href="#">برنامه نویسی</a></li>
+                <li class="category"><a href="#">هوش مصنوعی</a></li>
+                <li class="category"><a href="#">آموزش های تخصصی</a></li>
+                <li class="category"><a href="#">موسیقی</a></li>
+                <li class="category"><a href="#">روان شناسی</a></li>
+                <li class="category"><a href="#">هوش مصنوعی</a></li>
+                <li class="category"><a href="#">آموزش های تخصصی</a></li>
+                <li class="category"><a href="#">موسیقی</a></li>
+                <li class="category"><a href="#">روان شناسی</a></li>
+              </ul>
             </div>
-          </fieldset>
-          <fieldset class="flex-grow-1 lang-wrapper">
-            <div class="filter-tag-wrapper">
-              <a class="d-none lang-clear" href="#">پاک کردن</a>
-              <label>زیر مجموعه</label>
+            <div class="filter-extra-dropdown-btn flex-grow-1">
+              <a>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  role="img"
+                  class="icon"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0 6C0 5.17157 0.671573 4.5 1.5 4.5H22.5C23.3284 4.5 24 5.17157 24 6C24 6.82843 23.3284 7.5 22.5 7.5H1.5C0.671573 7.5 0 6.82843 0 6ZM3 12C3 11.1716 3.67157 10.5 4.5 10.5H19.5C20.3284 10.5 21 11.1716 21 12C21 12.8284 20.3284 13.5 19.5 13.5H4.5C3.67157 13.5 3 12.8284 3 12ZM7.5 16.5C6.67157 16.5 6 17.1716 6 18C6 18.8284 6.67157 19.5 7.5 19.5H16.5C17.3284 19.5 18 18.8284 18 18C18 17.1716 17.3284 16.5 16.5 16.5H7.5Z"
+                  ></path>
+                </svg>
+                <span>فیلتر</span>
+              </a>
             </div>
-            <div class="filter-lang-dropdown">
-              <span class="btn-dropdown full-width">
-                <a class="outline btn-dropdown-link full-width" href="#">
-                  <svg class="animation-btn" width="24" height="24" viewBox="0 0 24 24" role="img">
-                    <path
-                      d="M21.5265 8.77171C22.1578 8.13764 22.1578 7.10962 21.5265 6.47555C20.8951 5.84148 19.8714 5.84148 19.24 6.47555L11.9999 13.7465L4.75996 6.47573C4.12858 5.84166 3.10492 5.84166 2.47354 6.47573C1.84215 7.10979 1.84215 8.13782 2.47354 8.77188L10.8332 17.1671C10.8408 17.1751 10.8486 17.183 10.8565 17.1909C11.0636 17.399 11.313 17.5388 11.577 17.6103C11.5834 17.6121 11.5899 17.6138 11.5964 17.6154C12.132 17.7536 12.7242 17.6122 13.1435 17.1911C13.1539 17.1807 13.1641 17.1702 13.1742 17.1596L21.5265 8.77171Z">
-                    </path>
-                  </svg>
-                  <span>توسعه نرم افزار</span>
-                </a>
-                <div class="btn-dropdown-options d-none">
-                  <ul>
-                    <li>
-                      <a class="isActive" href="#">توسعه نرم افزار</a>
-                    </li>
-                    <li><a class="notActive" href="#">سخت افزار</a></li>
-                    <li><a class="notActive" href="#">توسعه وب</a></li>
-                  </ul>
-                </div>
-              </span>
-            </div>
-          </fieldset>
-          <fieldset class="flex-grow-1 lang-wrapper">
-            <div class="filter-tag-wrapper">
-              <a class="d-none lang-clear" href="#">پاک کردن</a>
-              <label>امتیاز</label>
-            </div>
-            <div class="filter-lang-dropdown">
-              <span class="btn-dropdown full-width">
-                <a class="outline btn-dropdown-link full-width" href="#">
-                  <svg class="animation-btn" width="24" height="24" viewBox="0 0 24 24" role="img">
-                    <path
-                      d="M21.5265 8.77171C22.1578 8.13764 22.1578 7.10962 21.5265 6.47555C20.8951 5.84148 19.8714 5.84148 19.24 6.47555L11.9999 13.7465L4.75996 6.47573C4.12858 5.84166 3.10492 5.84166 2.47354 6.47573C1.84215 7.10979 1.84215 8.13782 2.47354 8.77188L10.8332 17.1671C10.8408 17.1751 10.8486 17.183 10.8565 17.1909C11.0636 17.399 11.313 17.5388 11.577 17.6103C11.5834 17.6121 11.5899 17.6138 11.5964 17.6154C12.132 17.7536 12.7242 17.6122 13.1435 17.1911C13.1539 17.1807 13.1641 17.1702 13.1742 17.1596L21.5265 8.77171Z">
-                    </path>
-                  </svg>
-                  <span>3.5 امتیاز</span>
-                </a>
-                <div class="btn-dropdown-options d-none">
-                  <input type="range" min="1.0" max="5.0" name="rating" />
-                  <label for="rating">امتیاز</label>
-                </div>
-              </span>
-            </div>
-          </fieldset>
-        </form>
-      </div>
-    </div>
-  </section>
+          </div>
 
-  <!-- ------------------------------------ section 5 -------------------------------------------- -->
+          <!-- ---------------------------------- section 4 filter part -------------------------------- -->
 
-  <section class="s5 transform-position full-width">
-    <div class="section-5-wrapper full-width">
-      <div class="lesson-container full-width">
-        <div class="card-wrapper">
-          <a href="#">
-            <div class="card-preview outline full-width"></div>
-            <div class="card-detail full-width">
-              <div class="lesson-title-fav-wrapper full-width">
-                <div class="title">
-                  <h4>
-                    آموزش اصول و قواعد نام گذاری در کدنویسی بر اساس استاندارد
-                    مایکروسافت
-                  </h4>
-                </div>
-                <div class="fav-icon">
-                  <svg enable-background="new 0 0 24 24" viewBox="0 0 24 24" role="img" width="24" heigth="24">
-                    <path
-                      d="m18.199 2.04c-2.606-.284-4.262.961-6.199 3.008-2.045-2.047-3.593-3.292-6.199-3.008-3.544.388-6.321 4.43-5.718 7.96.966 5.659 5.944 9 11.917 12 5.973-3 10.951-6.341 11.917-12 .603-3.53-2.174-7.572-5.718-7.96z">
-                    </path>
-                  </svg>
-                </div>
+          <form class="filter-dropdown-container full-width" action="">
+            <fieldset class="flex-grow-1 search-wrapper">
+              <div class="filter-tag-wrapper">
+                <a class="d-none search-clear">پاک کردن</a>
+                <label>تگ ها</label>
               </div>
-              <div class="teacher-name-rating full-width">
-                <div class="t-name">
-                  <p><span>مهندس اسماعیل یلمه ها</span></p>
-                </div>
-                <div class="rating">
-                  <svg id="icon-rating-star" viewBox="0 0 24 24" width="18" height="18">
-                    <path
-                      d="M12 17.27l6.18 3.73-1.64-7.030 5.46-4.73-7.19-0.61-2.81-6.63-2.81 6.63-7.19 0.61 5.46 4.73-1.64 7.030 6.18-3.73z">
-                    </path>
-                  </svg>
-                  <svg id="icon-rating-star" viewBox="0 0 24 24" width="18" height="18">
-                    <path
-                      d="M12 17.27l6.18 3.73-1.64-7.030 5.46-4.73-7.19-0.61-2.81-6.63-2.81 6.63-7.19 0.61 5.46 4.73-1.64 7.030 6.18-3.73z">
-                    </path>
-                  </svg>
-                  <svg id="icon-rating-star" viewBox="0 0 24 24" width="18" height="18">
-                    <path
-                      d="M12 17.27l6.18 3.73-1.64-7.030 5.46-4.73-7.19-0.61-2.81-6.63-2.81 6.63-7.19 0.61 5.46 4.73-1.64 7.030 6.18-3.73z">
-                    </path>
-                  </svg>
-                  <svg id="icon-rating-star" viewBox="0 0 24 24" width="18" height="18">
-                    <path
-                      d="M12 17.27l6.18 3.73-1.64-7.030 5.46-4.73-7.19-0.61-2.81-6.63-2.81 6.63-7.19 0.61 5.46 4.73-1.64 7.030 6.18-3.73z">
-                    </path>
-                  </svg>
-                </div>
+              <div>
+                <input
+                  dir="rtl"
+                  type="text"
+                  placeholder="جستجو آموزش"
+                  value=""
+                  class="filter-search full-width js-main-search outline"
+                />
               </div>
-            </div>
-          </a>
+            </fieldset>
+            <fieldset class="flex-grow-1 lang-wrapper">
+              <div class="filter-tag-wrapper">
+                <a class="d-none lang-clear" href="#">پاک کردن</a>
+                <label>زبان</label>
+              </div>
+              <div class="filter-lang-dropdown">
+                <span class="btn-dropdown full-width">
+                  <a class="outline btn-dropdown-link full-width" href="#">
+                    <svg
+                      class="animation-btn"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      role="img"
+                    >
+                      <path
+                        d="M21.5265 8.77171C22.1578 8.13764 22.1578 7.10962 21.5265 6.47555C20.8951 5.84148 19.8714 5.84148 19.24 6.47555L11.9999 13.7465L4.75996 6.47573C4.12858 5.84166 3.10492 5.84166 2.47354 6.47573C1.84215 7.10979 1.84215 8.13782 2.47354 8.77188L10.8332 17.1671C10.8408 17.1751 10.8486 17.183 10.8565 17.1909C11.0636 17.399 11.313 17.5388 11.577 17.6103C11.5834 17.6121 11.5899 17.6138 11.5964 17.6154C12.132 17.7536 12.7242 17.6122 13.1435 17.1911C13.1539 17.1807 13.1641 17.1702 13.1742 17.1596L21.5265 8.77171Z"
+                      ></path>
+                    </svg>
+                    <span>دری</span>
+                  </a>
+                  <div class="btn-dropdown-options d-none">
+                    <ul>
+                      <li>
+                        <a class="isActive" href="#">دری</a>
+                      </li>
+                      <li><a class="notActive" href="#">پشتو</a></li>
+                      <li><a class="notActive" href="#">انگلیسی</a></li>
+                    </ul>
+                  </div>
+                </span>
+              </div>
+            </fieldset>
+            <fieldset class="flex-grow-1 lang-wrapper">
+              <div class="filter-tag-wrapper">
+                <a class="d-none lang-clear" href="#">پاک کردن</a>
+                <label>سطح سویه</label>
+              </div>
+              <div class="filter-lang-dropdown">
+                <span class="btn-dropdown full-width">
+                  <a class="outline btn-dropdown-link full-width" href="#">
+                    <svg
+                      class="animation-btn"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      role="img"
+                    >
+                      <path
+                        d="M21.5265 8.77171C22.1578 8.13764 22.1578 7.10962 21.5265 6.47555C20.8951 5.84148 19.8714 5.84148 19.24 6.47555L11.9999 13.7465L4.75996 6.47573C4.12858 5.84166 3.10492 5.84166 2.47354 6.47573C1.84215 7.10979 1.84215 8.13782 2.47354 8.77188L10.8332 17.1671C10.8408 17.1751 10.8486 17.183 10.8565 17.1909C11.0636 17.399 11.313 17.5388 11.577 17.6103C11.5834 17.6121 11.5899 17.6138 11.5964 17.6154C12.132 17.7536 12.7242 17.6122 13.1435 17.1911C13.1539 17.1807 13.1641 17.1702 13.1742 17.1596L21.5265 8.77171Z"
+                      ></path>
+                    </svg>
+                    <span>ابتدایی</span>
+                  </a>
+                  <div class="btn-dropdown-options d-none">
+                    <ul>
+                      <li>
+                        <a class="isActive" href="#">ابتدایی</a>
+                      </li>
+                      <li><a class="notActive" href="#">متوسط</a></li>
+                      <li><a class="notActive" href="#">حرفه ایی</a></li>
+                    </ul>
+                  </div>
+                </span>
+              </div>
+            </fieldset>
+            <fieldset class="flex-grow-1 lang-wrapper">
+              <div class="filter-tag-wrapper">
+                <a class="d-none lang-clear" href="#">پاک کردن</a>
+                <label>زمان آموزش</label>
+              </div>
+              <div class="filter-lang-dropdown">
+                <span class="btn-dropdown full-width">
+                  <a class="outline btn-dropdown-link full-width" href="#">
+                    <svg
+                      class="animation-btn"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      role="img"
+                    >
+                      <path
+                        d="M21.5265 8.77171C22.1578 8.13764 22.1578 7.10962 21.5265 6.47555C20.8951 5.84148 19.8714 5.84148 19.24 6.47555L11.9999 13.7465L4.75996 6.47573C4.12858 5.84166 3.10492 5.84166 2.47354 6.47573C1.84215 7.10979 1.84215 8.13782 2.47354 8.77188L10.8332 17.1671C10.8408 17.1751 10.8486 17.183 10.8565 17.1909C11.0636 17.399 11.313 17.5388 11.577 17.6103C11.5834 17.6121 11.5899 17.6138 11.5964 17.6154C12.132 17.7536 12.7242 17.6122 13.1435 17.1911C13.1539 17.1807 13.1641 17.1702 13.1742 17.1596L21.5265 8.77171Z"
+                      ></path>
+                    </svg>
+                    <span>2+</span>
+                  </a>
+                  <div class="btn-dropdown-options d-none">
+                    <ul>
+                      <li>
+                        <a class="isActive" href="#">3+</a>
+                      </li>
+                      <li><a class="notActive" href="#">4+</a></li>
+                      <li><a class="notActive" href="#">5+</a></li>
+                      <li><a class="notActive" href="#">7+</a></li>
+                      <li><a class="notActive" href="#">10+</a></li>
+                      <li><a class="notActive" href="#">12+</a></li>
+                    </ul>
+                  </div>
+                </span>
+              </div>
+            </fieldset>
+            <fieldset class="flex-grow-1 lang-wrapper">
+              <div class="filter-tag-wrapper">
+                <a class="d-none lang-clear" href="#">پاک کردن</a>
+                <label>زیر مجموعه</label>
+              </div>
+              <div class="filter-lang-dropdown">
+                <span class="btn-dropdown full-width">
+                  <a class="outline btn-dropdown-link full-width" href="#">
+                    <svg
+                      class="animation-btn"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      role="img"
+                    >
+                      <path
+                        d="M21.5265 8.77171C22.1578 8.13764 22.1578 7.10962 21.5265 6.47555C20.8951 5.84148 19.8714 5.84148 19.24 6.47555L11.9999 13.7465L4.75996 6.47573C4.12858 5.84166 3.10492 5.84166 2.47354 6.47573C1.84215 7.10979 1.84215 8.13782 2.47354 8.77188L10.8332 17.1671C10.8408 17.1751 10.8486 17.183 10.8565 17.1909C11.0636 17.399 11.313 17.5388 11.577 17.6103C11.5834 17.6121 11.5899 17.6138 11.5964 17.6154C12.132 17.7536 12.7242 17.6122 13.1435 17.1911C13.1539 17.1807 13.1641 17.1702 13.1742 17.1596L21.5265 8.77171Z"
+                      ></path>
+                    </svg>
+                    <span>توسعه نرم افزار</span>
+                  </a>
+                  <div class="btn-dropdown-options d-none">
+                    <ul>
+                      <li>
+                        <a class="isActive" href="#">توسعه نرم افزار</a>
+                      </li>
+                      <li><a class="notActive" href="#">سخت افزار</a></li>
+                      <li><a class="notActive" href="#">توسعه وب</a></li>
+                    </ul>
+                  </div>
+                </span>
+              </div>
+            </fieldset>
+            <fieldset class="flex-grow-1 lang-wrapper">
+              <div class="filter-tag-wrapper">
+                <a class="d-none lang-clear" href="#">پاک کردن</a>
+                <label>امتیاز</label>
+              </div>
+              <div class="filter-lang-dropdown">
+                <span class="btn-dropdown full-width">
+                  <a class="outline btn-dropdown-link full-width" href="#">
+                    <svg
+                      class="animation-btn"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      role="img"
+                    >
+                      <path
+                        d="M21.5265 8.77171C22.1578 8.13764 22.1578 7.10962 21.5265 6.47555C20.8951 5.84148 19.8714 5.84148 19.24 6.47555L11.9999 13.7465L4.75996 6.47573C4.12858 5.84166 3.10492 5.84166 2.47354 6.47573C1.84215 7.10979 1.84215 8.13782 2.47354 8.77188L10.8332 17.1671C10.8408 17.1751 10.8486 17.183 10.8565 17.1909C11.0636 17.399 11.313 17.5388 11.577 17.6103C11.5834 17.6121 11.5899 17.6138 11.5964 17.6154C12.132 17.7536 12.7242 17.6122 13.1435 17.1911C13.1539 17.1807 13.1641 17.1702 13.1742 17.1596L21.5265 8.77171Z"
+                      ></path>
+                    </svg>
+                    <span>3.5 امتیاز</span>
+                  </a>
+                  <div class="btn-dropdown-options d-none">
+                    <input type="range" min="1.0" max="5.0" name="rating" />
+                    <label for="rating">امتیاز</label>
+                  </div>
+                </span>
+              </div>
+            </fieldset>
+          </form>
         </div>
-        <div class="card-full-detail">
-          <div class="full-detail-content">
-            <div class="full-title">
-              <h4>
-                آموزش اصول و قواعد نام گذاری در کدنویسی بر اساس استاندارد
-                مایکروسافت
-              </h4>
+      </div>
+    </section>
+
+    <!-- ------------------------------------ section 5 -------------------------------------------- -->
+
+    <section class="s5 transform-position full-width">
+      <div class="section-5-wrapper full-width">
+        <div class="lesson-container full-width">
+          <div class="card-wrapper">
+            <a href="#">
+              <div class="card-preview outline full-width"></div>
+              <div class="card-detail full-width">
+                <div class="lesson-title-fav-wrapper full-width">
+                  <div class="title">
+                    <h4>
+                      آموزش اصول و قواعد نام گذاری در کدنویسی بر اساس استاندارد
+                      مایکروسافت
+                    </h4>
+                  </div>
+                  <div class="fav-icon">
+                    <svg
+                      enable-background="new 0 0 24 24"
+                      viewBox="0 0 24 24"
+                      role="img"
+                      width="24"
+                      heigth="24"
+                    >
+                      <path
+                        d="m18.199 2.04c-2.606-.284-4.262.961-6.199 3.008-2.045-2.047-3.593-3.292-6.199-3.008-3.544.388-6.321 4.43-5.718 7.96.966 5.659 5.944 9 11.917 12 5.973-3 10.951-6.341 11.917-12 .603-3.53-2.174-7.572-5.718-7.96z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="teacher-name-rating full-width">
+                  <div class="t-name">
+                    <p><span>مهندس اسماعیل یلمه ها</span></p>
+                  </div>
+                  <div class="rating">
+                    <svg
+                      id="icon-rating-star"
+                      viewBox="0 0 24 24"
+                      width="18"
+                      height="18"
+                    >
+                      <path
+                        d="M12 17.27l6.18 3.73-1.64-7.030 5.46-4.73-7.19-0.61-2.81-6.63-2.81 6.63-7.19 0.61 5.46 4.73-1.64 7.030 6.18-3.73z"
+                      ></path>
+                    </svg>
+                    <svg
+                      id="icon-rating-star"
+                      viewBox="0 0 24 24"
+                      width="18"
+                      height="18"
+                    >
+                      <path
+                        d="M12 17.27l6.18 3.73-1.64-7.030 5.46-4.73-7.19-0.61-2.81-6.63-2.81 6.63-7.19 0.61 5.46 4.73-1.64 7.030 6.18-3.73z"
+                      ></path>
+                    </svg>
+                    <svg
+                      id="icon-rating-star"
+                      viewBox="0 0 24 24"
+                      width="18"
+                      height="18"
+                    >
+                      <path
+                        d="M12 17.27l6.18 3.73-1.64-7.030 5.46-4.73-7.19-0.61-2.81-6.63-2.81 6.63-7.19 0.61 5.46 4.73-1.64 7.030 6.18-3.73z"
+                      ></path>
+                    </svg>
+                    <svg
+                      id="icon-rating-star"
+                      viewBox="0 0 24 24"
+                      width="18"
+                      height="18"
+                    >
+                      <path
+                        d="M12 17.27l6.18 3.73-1.64-7.030 5.46-4.73-7.19-0.61-2.81-6.63-2.81 6.63-7.19 0.61 5.46 4.73-1.64 7.030 6.18-3.73z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="card-full-detail">
+            <div class="full-detail-content">
+              <div class="full-title">
+                <h4>
+                  آموزش اصول و قواعد نام گذاری در کدنویسی بر اساس استاندارد
+                  مایکروسافت
+                </h4>
+              </div>
+              <div class="upload-date-best-class-wrapper">
+                <div class="upload-date">
+                  <span>آخرین بروز رسانی - 13 حمل 1399</span>
+                </div>
+                <div class="best-class font-size-weight">
+                  <span>بهترین آموزش</span>
+                </div>
+              </div>
+              <div class="hours-levels-wrapper font-size-weight">
+                <div dir="rtl" class="lesson-hours font-size-weight">
+                  <span>8 ساعت آموزش</span>
+                </div>
+                <div dir="rtl" class="difficulty-level font-size-weight">
+                  <span>حرفه ایی</span>
+                </div>
+                <div dir="rtl" class="subtitle">
+                  <span>زیر نویس: فارسی</span>
+                </div>
+              </div>
+              <div dir="rtl" class="short-description">
+                <span
+                  >کدنویسی استاندارد یکی از فاکتورهای مهم در انجام یک کار گروهی
+                  خوب است و در واقع این موضوع کمک می کند که اعضای تیم با هزینه
+                  کمتر و سرعت بالاتری بر کدهای نوشته شده توسط اعضای دیگر مسلط
+                  شوند و کد از الگو و هارمونی یکسانی برخوردار باشد.</span
+                >
+              </div>
+              <div dir="rtl" class="futures-wrapper full-width">
+                <span>شیوه نام گذاری PascalCase</span>
+                <span>شیوه نام گذاری CamelCase</span>
+                <span>شیوه نام گذاری Hungarian Casing</span>
+              </div>
+              <div class="button-wrapper full-width">
+                <div class="fav-icon fav-icon-full">
+                  <svg
+                    enable-background="new 0 0 24 24"
+                    viewBox="0 0 24 24"
+                    role="img"
+                    width="24"
+                    heigth="24"
+                  >
+                    <path
+                      d="m18.199 2.04c-2.606-.284-4.262.961-6.199 3.008-2.045-2.047-3.593-3.292-6.199-3.008-3.544.388-6.321 4.43-5.718 7.96.966 5.659 5.944 9 11.917 12 5.973-3 10.951-6.341 11.917-12 .603-3.53-2.174-7.572-5.718-7.96z"
+                    ></path>
+                  </svg>
+                </div>
+                <a href="#"><span>شروع آموزش</span></a>
+              </div>
             </div>
-            <div class="upload-date-best-class-wrapper">
-              <div class="upload-date">
-                <span>آخرین بروز رسانی - 13 حمل 1399</span>
+          </div>
+        </div>
+        <div class="lesson-container full-width">
+          <div class="card-wrapper">
+            <a href="#">
+              <div class="card-preview outline full-width"></div>
+              <div class="card-detail full-width">
+                <div class="lesson-title-fav-wrapper full-width">
+                  <div class="title">
+                    <h4>
+                      آموزش اصول و قواعد نام گذاری در کدنویسی بر اساس استاندارد
+                      مایکروسافت
+                    </h4>
+                  </div>
+                  <div class="fav-icon">
+                    <svg
+                      enable-background="new 0 0 24 24"
+                      viewBox="0 0 24 24"
+                      role="img"
+                      width="24"
+                      heigth="24"
+                    >
+                      <path
+                        d="m18.199 2.04c-2.606-.284-4.262.961-6.199 3.008-2.045-2.047-3.593-3.292-6.199-3.008-3.544.388-6.321 4.43-5.718 7.96.966 5.659 5.944 9 11.917 12 5.973-3 10.951-6.341 11.917-12 .603-3.53-2.174-7.572-5.718-7.96z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="teacher-name-rating full-width">
+                  <div class="t-name">
+                    <p><span>مهندس اسماعیل یلمه ها</span></p>
+                  </div>
+                  <div class="rating">
+                    <svg
+                      id="icon-rating-star"
+                      viewBox="0 0 24 24"
+                      width="18"
+                      height="18"
+                    >
+                      <path
+                        d="M12 17.27l6.18 3.73-1.64-7.030 5.46-4.73-7.19-0.61-2.81-6.63-2.81 6.63-7.19 0.61 5.46 4.73-1.64 7.030 6.18-3.73z"
+                      ></path>
+                    </svg>
+                    <svg
+                      id="icon-rating-star"
+                      viewBox="0 0 24 24"
+                      width="18"
+                      height="18"
+                    >
+                      <path
+                        d="M12 17.27l6.18 3.73-1.64-7.030 5.46-4.73-7.19-0.61-2.81-6.63-2.81 6.63-7.19 0.61 5.46 4.73-1.64 7.030 6.18-3.73z"
+                      ></path>
+                    </svg>
+                    <svg
+                      id="icon-rating-star"
+                      viewBox="0 0 24 24"
+                      width="18"
+                      height="18"
+                    >
+                      <path
+                        d="M12 17.27l6.18 3.73-1.64-7.030 5.46-4.73-7.19-0.61-2.81-6.63-2.81 6.63-7.19 0.61 5.46 4.73-1.64 7.030 6.18-3.73z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
               </div>
-              <div class="best-class font-size-weight">
-                <span>بهترین آموزش</span>
+            </a>
+          </div>
+          <div class="card-full-detail">
+            <div class="full-detail-content">
+              <div class="full-title">
+                <h4>
+                  آموزش اصول و قواعد نام گذاری در کدنویسی بر اساس استاندارد
+                  مایکروسافت
+                </h4>
+              </div>
+              <div class="upload-date-best-class-wrapper">
+                <div class="upload-date">
+                  <span>آخرین بروز رسانی - 13 حمل 1399</span>
+                </div>
+                <div class="best-class font-size-weight">
+                  <span>بهترین آموزش</span>
+                </div>
+              </div>
+              <div class="hours-levels-wrapper font-size-weight">
+                <div dir="rtl" class="lesson-hours font-size-weight">
+                  <span>8 ساعت آموزش</span>
+                </div>
+                <div dir="rtl" class="difficulty-level font-size-weight">
+                  <span>حرفه ایی</span>
+                </div>
+                <div dir="rtl" class="subtitle">
+                  <span>زیر نویس: فارسی</span>
+                </div>
+              </div>
+              <div dir="rtl" class="short-description">
+                <span
+                  >کدنویسی استاندارد یکی از فاکتورهای مهم در انجام یک کار گروهی
+                  خوب است و در واقع این موضوع کمک می کند که اعضای تیم با هزینه
+                  کمتر و سرعت بالاتری بر کدهای نوشته شده توسط اعضای دیگر مسلط
+                  شوند و کد از الگو و هارمونی یکسانی برخوردار باشد.</span
+                >
+              </div>
+              <div dir="rtl" class="futures-wrapper full-width">
+                <span>شیوه نام گذاری PascalCase</span>
+                <span>شیوه نام گذاری CamelCase</span>
+                <span>شیوه نام گذاری Hungarian Casing</span>
+              </div>
+              <div class="button-wrapper full-width">
+                <div class="fav-icon fav-icon-full">
+                  <svg
+                    enable-background="new 0 0 24 24"
+                    viewBox="0 0 24 24"
+                    role="img"
+                    width="24"
+                    heigth="24"
+                  >
+                    <path
+                      d="m18.199 2.04c-2.606-.284-4.262.961-6.199 3.008-2.045-2.047-3.593-3.292-6.199-3.008-3.544.388-6.321 4.43-5.718 7.96.966 5.659 5.944 9 11.917 12 5.973-3 10.951-6.341 11.917-12 .603-3.53-2.174-7.572-5.718-7.96z"
+                    ></path>
+                  </svg>
+                </div>
+                <a href="#"><span>شروع آموزش</span></a>
               </div>
             </div>
-            <div class="hours-levels-wrapper font-size-weight">
-              <div dir="rtl" class="lesson-hours font-size-weight">
-                <span>8 ساعت آموزش</span>
+          </div>
+        </div>
+        <div class="lesson-container full-width">
+          <div class="card-wrapper">
+            <a href="#">
+              <div class="card-preview outline full-width"></div>
+              <div class="card-detail full-width">
+                <div class="lesson-title-fav-wrapper full-width">
+                  <div class="title">
+                    <h4>
+                      آموزش اصول و قواعد نام گذاری در کدنویسی بر اساس استاندارد
+                      مایکروسافت
+                    </h4>
+                  </div>
+                  <div class="fav-icon">
+                    <svg
+                      enable-background="new 0 0 24 24"
+                      viewBox="0 0 24 24"
+                      role="img"
+                      width="24"
+                      heigth="24"
+                    >
+                      <path
+                        d="m18.199 2.04c-2.606-.284-4.262.961-6.199 3.008-2.045-2.047-3.593-3.292-6.199-3.008-3.544.388-6.321 4.43-5.718 7.96.966 5.659 5.944 9 11.917 12 5.973-3 10.951-6.341 11.917-12 .603-3.53-2.174-7.572-5.718-7.96z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="teacher-name-rating full-width">
+                  <div class="t-name">
+                    <p><span>مهندس اسماعیل یلمه ها</span></p>
+                  </div>
+                  <div class="rating">
+                    <svg
+                      id="icon-rating-star"
+                      viewBox="0 0 24 24"
+                      width="18"
+                      height="18"
+                    >
+                      <path
+                        d="M12 17.27l6.18 3.73-1.64-7.030 5.46-4.73-7.19-0.61-2.81-6.63-2.81 6.63-7.19 0.61 5.46 4.73-1.64 7.030 6.18-3.73z"
+                      ></path>
+                    </svg>
+                    <svg
+                      id="icon-rating-star"
+                      viewBox="0 0 24 24"
+                      width="18"
+                      height="18"
+                    >
+                      <path
+                        d="M12 17.27l6.18 3.73-1.64-7.030 5.46-4.73-7.19-0.61-2.81-6.63-2.81 6.63-7.19 0.61 5.46 4.73-1.64 7.030 6.18-3.73z"
+                      ></path>
+                    </svg>
+                    <svg
+                      id="icon-rating-star"
+                      viewBox="0 0 24 24"
+                      width="18"
+                      height="18"
+                    >
+                      <path
+                        d="M12 17.27l6.18 3.73-1.64-7.030 5.46-4.73-7.19-0.61-2.81-6.63-2.81 6.63-7.19 0.61 5.46 4.73-1.64 7.030 6.18-3.73z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
               </div>
-              <div dir="rtl" class="difficulty-level font-size-weight">
-                <span>حرفه ایی</span>
+            </a>
+          </div>
+          <div class="card-full-detail">
+            <div class="full-detail-content">
+              <div class="full-title">
+                <h4>
+                  آموزش اصول و قواعد نام گذاری در کدنویسی بر اساس استاندارد
+                  مایکروسافت
+                </h4>
               </div>
-              <div dir="rtl" class="subtitle">
-                <span>زیر نویس: فارسی</span>
+              <div class="upload-date-best-class-wrapper">
+                <div class="upload-date">
+                  <span>آخرین بروز رسانی - 13 حمل 1399</span>
+                </div>
+                <div class="best-class font-size-weight">
+                  <span>بهترین آموزش</span>
+                </div>
+              </div>
+              <div class="hours-levels-wrapper font-size-weight">
+                <div dir="rtl" class="lesson-hours font-size-weight">
+                  <span>8 ساعت آموزش</span>
+                </div>
+                <div dir="rtl" class="difficulty-level font-size-weight">
+                  <span>حرفه ایی</span>
+                </div>
+                <div dir="rtl" class="subtitle">
+                  <span>زیر نویس: فارسی</span>
+                </div>
+              </div>
+              <div dir="rtl" class="short-description">
+                <span
+                  >کدنویسی استاندارد یکی از فاکتورهای مهم در انجام یک کار گروهی
+                  خوب است و در واقع این موضوع کمک می کند که اعضای تیم با هزینه
+                  کمتر و سرعت بالاتری بر کدهای نوشته شده توسط اعضای دیگر مسلط
+                  شوند و کد از الگو و هارمونی یکسانی برخوردار باشد.</span
+                >
+              </div>
+              <div dir="rtl" class="futures-wrapper full-width">
+                <span>شیوه نام گذاری PascalCase</span>
+                <span>شیوه نام گذاری CamelCase</span>
+                <span>شیوه نام گذاری Hungarian Casing</span>
+              </div>
+              <div class="button-wrapper full-width">
+                <div class="fav-icon fav-icon-full">
+                  <svg
+                    enable-background="new 0 0 24 24"
+                    viewBox="0 0 24 24"
+                    role="img"
+                    width="24"
+                    heigth="24"
+                  >
+                    <path
+                      d="m18.199 2.04c-2.606-.284-4.262.961-6.199 3.008-2.045-2.047-3.593-3.292-6.199-3.008-3.544.388-6.321 4.43-5.718 7.96.966 5.659 5.944 9 11.917 12 5.973-3 10.951-6.341 11.917-12 .603-3.53-2.174-7.572-5.718-7.96z"
+                    ></path>
+                  </svg>
+                </div>
+                <a href="#"><span>شروع آموزش</span></a>
               </div>
             </div>
-            <div dir="rtl" class="short-description">
-              <span>کدنویسی استاندارد یکی از فاکتورهای مهم در انجام یک کار گروهی
-                خوب است و در واقع این موضوع کمک می کند که اعضای تیم با هزینه
-                کمتر و سرعت بالاتری بر کدهای نوشته شده توسط اعضای دیگر مسلط
-                شوند و کد از الگو و هارمونی یکسانی برخوردار باشد.</span>
-            </div>
-            <div dir="rtl" class="futures-wrapper full-width">
-              <span>شیوه نام گذاری PascalCase</span>
-              <span>شیوه نام گذاری CamelCase</span>
-              <span>شیوه نام گذاری Hungarian Casing</span>
-            </div>
-            <div class="button-wrapper full-width">
-              <div class="fav-icon fav-icon-full">
-                <svg enable-background="new 0 0 24 24" viewBox="0 0 24 24" role="img" width="24" heigth="24">
-                  <path
-                    d="m18.199 2.04c-2.606-.284-4.262.961-6.199 3.008-2.045-2.047-3.593-3.292-6.199-3.008-3.544.388-6.321 4.43-5.718 7.96.966 5.659 5.944 9 11.917 12 5.973-3 10.951-6.341 11.917-12 .603-3.53-2.174-7.572-5.718-7.96z">
-                  </path>
-                </svg>
+          </div>
+        </div>
+        <div class="lesson-container full-width">
+          <div class="card-wrapper">
+            <a href="#">
+              <div class="card-preview outline full-width"></div>
+              <div class="card-detail full-width">
+                <div class="lesson-title-fav-wrapper full-width">
+                  <div class="title">
+                    <h4>
+                      آموزش اصول و قواعد نام گذاری در کدنویسی بر اساس استاندارد
+                      مایکروسافت
+                    </h4>
+                  </div>
+                  <div class="fav-icon">
+                    <svg
+                      enable-background="new 0 0 24 24"
+                      viewBox="0 0 24 24"
+                      role="img"
+                      width="24"
+                      heigth="24"
+                    >
+                      <path
+                        d="m18.199 2.04c-2.606-.284-4.262.961-6.199 3.008-2.045-2.047-3.593-3.292-6.199-3.008-3.544.388-6.321 4.43-5.718 7.96.966 5.659 5.944 9 11.917 12 5.973-3 10.951-6.341 11.917-12 .603-3.53-2.174-7.572-5.718-7.96z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="teacher-name-rating full-width">
+                  <div class="t-name">
+                    <p><span>مهندس اسماعیل یلمه ها</span></p>
+                  </div>
+                  <div class="rating">
+                    <svg
+                      id="icon-rating-star"
+                      viewBox="0 0 24 24"
+                      width="18"
+                      height="18"
+                    >
+                      <path
+                        d="M12 17.27l6.18 3.73-1.64-7.030 5.46-4.73-7.19-0.61-2.81-6.63-2.81 6.63-7.19 0.61 5.46 4.73-1.64 7.030 6.18-3.73z"
+                      ></path>
+                    </svg>
+                    <svg
+                      id="icon-rating-star"
+                      viewBox="0 0 24 24"
+                      width="18"
+                      height="18"
+                    >
+                      <path
+                        d="M12 17.27l6.18 3.73-1.64-7.030 5.46-4.73-7.19-0.61-2.81-6.63-2.81 6.63-7.19 0.61 5.46 4.73-1.64 7.030 6.18-3.73z"
+                      ></path>
+                    </svg>
+                    <svg
+                      id="icon-rating-star"
+                      viewBox="0 0 24 24"
+                      width="18"
+                      height="18"
+                    >
+                      <path
+                        d="M12 17.27l6.18 3.73-1.64-7.030 5.46-4.73-7.19-0.61-2.81-6.63-2.81 6.63-7.19 0.61 5.46 4.73-1.64 7.030 6.18-3.73z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
               </div>
-              <a href="#"><span>شروع آموزش</span></a>
+            </a>
+          </div>
+          <div class="card-full-detail-left">
+            <div class="full-detail-content">
+              <div class="full-title">
+                <h4>
+                  آموزش اصول و قواعد نام گذاری در کدنویسی بر اساس استاندارد
+                  مایکروسافت
+                </h4>
+              </div>
+              <div class="upload-date-best-class-wrapper">
+                <div class="upload-date">
+                  <span>آخرین بروز رسانی - 13 حمل 1399</span>
+                </div>
+                <div class="best-class font-size-weight">
+                  <span>بهترین آموزش</span>
+                </div>
+              </div>
+              <div class="hours-levels-wrapper font-size-weight">
+                <div dir="rtl" class="lesson-hours font-size-weight">
+                  <span>8 ساعت آموزش</span>
+                </div>
+                <div dir="rtl" class="difficulty-level font-size-weight">
+                  <span>حرفه ایی</span>
+                </div>
+                <div dir="rtl" class="subtitle">
+                  <span>زیر نویس: فارسی</span>
+                </div>
+              </div>
+              <div dir="rtl" class="short-description">
+                <span
+                  >کدنویسی استاندارد یکی از فاکتورهای مهم در انجام یک کار گروهی
+                  خوب است و در واقع این موضوع کمک می کند که اعضای تیم با هزینه
+                  کمتر و سرعت بالاتری بر کدهای نوشته شده توسط اعضای دیگر مسلط
+                  شوند و کد از الگو و هارمونی یکسانی برخوردار باشد.</span
+                >
+              </div>
+              <div dir="rtl" class="futures-wrapper full-width">
+                <span>شیوه نام گذاری PascalCase</span>
+                <span>شیوه نام گذاری CamelCase</span>
+                <span>شیوه نام گذاری Hungarian Casing</span>
+              </div>
+              <div class="button-wrapper full-width">
+                <div class="fav-icon fav-icon-full">
+                  <svg
+                    enable-background="new 0 0 24 24"
+                    viewBox="0 0 24 24"
+                    role="img"
+                    width="24"
+                    heigth="24"
+                  >
+                    <path
+                      d="m18.199 2.04c-2.606-.284-4.262.961-6.199 3.008-2.045-2.047-3.593-3.292-6.199-3.008-3.544.388-6.321 4.43-5.718 7.96.966 5.659 5.944 9 11.917 12 5.973-3 10.951-6.341 11.917-12 .603-3.53-2.174-7.572-5.718-7.96z"
+                    ></path>
+                  </svg>
+                </div>
+                <a href="#"><span>شروع آموزش</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="lesson-container full-width">
+          <div class="card-wrapper">
+            <a href="#">
+              <div class="card-preview outline full-width"></div>
+              <div class="card-detail full-width">
+                <div class="lesson-title-fav-wrapper full-width">
+                  <div class="title">
+                    <h4>
+                      آموزش اصول و قواعد نام گذاری در کدنویسی بر اساس استاندارد
+                      مایکروسافت
+                    </h4>
+                  </div>
+                  <div class="fav-icon">
+                    <svg
+                      enable-background="new 0 0 24 24"
+                      viewBox="0 0 24 24"
+                      role="img"
+                      width="24"
+                      heigth="24"
+                    >
+                      <path
+                        d="m18.199 2.04c-2.606-.284-4.262.961-6.199 3.008-2.045-2.047-3.593-3.292-6.199-3.008-3.544.388-6.321 4.43-5.718 7.96.966 5.659 5.944 9 11.917 12 5.973-3 10.951-6.341 11.917-12 .603-3.53-2.174-7.572-5.718-7.96z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="teacher-name-rating full-width">
+                  <div class="t-name">
+                    <p><span>مهندس اسماعیل یلمه ها</span></p>
+                  </div>
+                  <div class="rating">
+                    <svg
+                      id="icon-rating-star"
+                      viewBox="0 0 24 24"
+                      width="18"
+                      height="18"
+                    >
+                      <path
+                        d="M12 17.27l6.18 3.73-1.64-7.030 5.46-4.73-7.19-0.61-2.81-6.63-2.81 6.63-7.19 0.61 5.46 4.73-1.64 7.030 6.18-3.73z"
+                      ></path>
+                    </svg>
+                    <svg
+                      id="icon-rating-star"
+                      viewBox="0 0 24 24"
+                      width="18"
+                      height="18"
+                    >
+                      <path
+                        d="M12 17.27l6.18 3.73-1.64-7.030 5.46-4.73-7.19-0.61-2.81-6.63-2.81 6.63-7.19 0.61 5.46 4.73-1.64 7.030 6.18-3.73z"
+                      ></path>
+                    </svg>
+                    <svg
+                      id="icon-rating-star"
+                      viewBox="0 0 24 24"
+                      width="18"
+                      height="18"
+                    >
+                      <path
+                        d="M12 17.27l6.18 3.73-1.64-7.030 5.46-4.73-7.19-0.61-2.81-6.63-2.81 6.63-7.19 0.61 5.46 4.73-1.64 7.030 6.18-3.73z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="card-full-detail">
+            <div class="full-detail-content">
+              <div class="full-title">
+                <h4>
+                  آموزش اصول و قواعد نام گذاری در کدنویسی بر اساس استاندارد
+                  مایکروسافت
+                </h4>
+              </div>
+              <div class="upload-date-best-class-wrapper">
+                <div class="upload-date">
+                  <span>آخرین بروز رسانی - 13 حمل 1399</span>
+                </div>
+                <div class="best-class font-size-weight">
+                  <span>بهترین آموزش</span>
+                </div>
+              </div>
+              <div class="hours-levels-wrapper font-size-weight">
+                <div dir="rtl" class="lesson-hours font-size-weight">
+                  <span>8 ساعت آموزش</span>
+                </div>
+                <div dir="rtl" class="difficulty-level font-size-weight">
+                  <span>حرفه ایی</span>
+                </div>
+                <div dir="rtl" class="subtitle">
+                  <span>زیر نویس: فارسی</span>
+                </div>
+              </div>
+              <div dir="rtl" class="short-description">
+                <span
+                  >کدنویسی استاندارد یکی از فاکتورهای مهم در انجام یک کار گروهی
+                  خوب است و در واقع این موضوع کمک می کند که اعضای تیم با هزینه
+                  کمتر و سرعت بالاتری بر کدهای نوشته شده توسط اعضای دیگر مسلط
+                  شوند و کد از الگو و هارمونی یکسانی برخوردار باشد.</span
+                >
+              </div>
+              <div dir="rtl" class="futures-wrapper full-width">
+                <span>شیوه نام گذاری PascalCase</span>
+                <span>شیوه نام گذاری CamelCase</span>
+                <span>شیوه نام گذاری Hungarian Casing</span>
+              </div>
+              <div class="button-wrapper full-width">
+                <div class="fav-icon fav-icon-full">
+                  <svg
+                    enable-background="new 0 0 24 24"
+                    viewBox="0 0 24 24"
+                    role="img"
+                    width="24"
+                    heigth="24"
+                  >
+                    <path
+                      d="m18.199 2.04c-2.606-.284-4.262.961-6.199 3.008-2.045-2.047-3.593-3.292-6.199-3.008-3.544.388-6.321 4.43-5.718 7.96.966 5.659 5.944 9 11.917 12 5.973-3 10.951-6.341 11.917-12 .603-3.53-2.174-7.572-5.718-7.96z"
+                    ></path>
+                  </svg>
+                </div>
+                <a href="#"><span>شروع آموزش</span></a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="lesson-container full-width">
-        <div class="card-wrapper">
+      <div class="numbers-wrapper full-width">
+        <div class="previous-wrapper">
           <a href="#">
-            <div class="card-preview outline full-width"></div>
-            <div class="card-detail full-width">
-              <div class="lesson-title-fav-wrapper full-width">
-                <div class="title">
-                  <h4>
-                    آموزش اصول و قواعد نام گذاری در کدنویسی بر اساس استاندارد
-                    مایکروسافت
-                  </h4>
-                </div>
-                <div class="fav-icon">
-                  <svg enable-background="new 0 0 24 24" viewBox="0 0 24 24" role="img" width="24" heigth="24">
-                    <path
-                      d="m18.199 2.04c-2.606-.284-4.262.961-6.199 3.008-2.045-2.047-3.593-3.292-6.199-3.008-3.544.388-6.321 4.43-5.718 7.96.966 5.659 5.944 9 11.917 12 5.973-3 10.951-6.341 11.917-12 .603-3.53-2.174-7.572-5.718-7.96z">
-                    </path>
-                  </svg>
-                </div>
-              </div>
-              <div class="teacher-name-rating full-width">
-                <div class="t-name">
-                  <p><span>مهندس اسماعیل یلمه ها</span></p>
-                </div>
-                <div class="rating">
-                  <svg id="icon-rating-star" viewBox="0 0 24 24" width="18" height="18">
-                    <path
-                      d="M12 17.27l6.18 3.73-1.64-7.030 5.46-4.73-7.19-0.61-2.81-6.63-2.81 6.63-7.19 0.61 5.46 4.73-1.64 7.030 6.18-3.73z">
-                    </path>
-                  </svg>
-                  <svg id="icon-rating-star" viewBox="0 0 24 24" width="18" height="18">
-                    <path
-                      d="M12 17.27l6.18 3.73-1.64-7.030 5.46-4.73-7.19-0.61-2.81-6.63-2.81 6.63-7.19 0.61 5.46 4.73-1.64 7.030 6.18-3.73z">
-                    </path>
-                  </svg>
-                  <svg id="icon-rating-star" viewBox="0 0 24 24" width="18" height="18">
-                    <path
-                      d="M12 17.27l6.18 3.73-1.64-7.030 5.46-4.73-7.19-0.61-2.81-6.63-2.81 6.63-7.19 0.61 5.46 4.73-1.64 7.030 6.18-3.73z">
-                    </path>
-                  </svg>
-                </div>
-              </div>
-            </div>
+            <svg
+              class="scroll-btn"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              role="img"
+            >
+              <path
+                d="M21.5265 8.77171C22.1578 8.13764 22.1578 7.10962 21.5265 6.47555C20.8951 5.84148 19.8714 5.84148 19.24 6.47555L11.9999 13.7465L4.75996 6.47573C4.12858 5.84166 3.10492 5.84166 2.47354 6.47573C1.84215 7.10979 1.84215 8.13782 2.47354 8.77188L10.8332 17.1671C10.8408 17.1751 10.8486 17.183 10.8565 17.1909C11.0636 17.399 11.313 17.5388 11.577 17.6103C11.5834 17.6121 11.5899 17.6138 11.5964 17.6154C12.132 17.7536 12.7242 17.6122 13.1435 17.1911C13.1539 17.1807 13.1641 17.1702 13.1742 17.1596L21.5265 8.77171Z"
+              ></path>
+            </svg>
           </a>
         </div>
-        <div class="card-full-detail">
-          <div class="full-detail-content">
-            <div class="full-title">
-              <h4>
-                آموزش اصول و قواعد نام گذاری در کدنویسی بر اساس استاندارد
-                مایکروسافت
-              </h4>
-            </div>
-            <div class="upload-date-best-class-wrapper">
-              <div class="upload-date">
-                <span>آخرین بروز رسانی - 13 حمل 1399</span>
-              </div>
-              <div class="best-class font-size-weight">
-                <span>بهترین آموزش</span>
-              </div>
-            </div>
-            <div class="hours-levels-wrapper font-size-weight">
-              <div dir="rtl" class="lesson-hours font-size-weight">
-                <span>8 ساعت آموزش</span>
-              </div>
-              <div dir="rtl" class="difficulty-level font-size-weight">
-                <span>حرفه ایی</span>
-              </div>
-              <div dir="rtl" class="subtitle">
-                <span>زیر نویس: فارسی</span>
-              </div>
-            </div>
-            <div dir="rtl" class="short-description">
-              <span>کدنویسی استاندارد یکی از فاکتورهای مهم در انجام یک کار گروهی
-                خوب است و در واقع این موضوع کمک می کند که اعضای تیم با هزینه
-                کمتر و سرعت بالاتری بر کدهای نوشته شده توسط اعضای دیگر مسلط
-                شوند و کد از الگو و هارمونی یکسانی برخوردار باشد.</span>
-            </div>
-            <div dir="rtl" class="futures-wrapper full-width">
-              <span>شیوه نام گذاری PascalCase</span>
-              <span>شیوه نام گذاری CamelCase</span>
-              <span>شیوه نام گذاری Hungarian Casing</span>
-            </div>
-            <div class="button-wrapper full-width">
-              <div class="fav-icon fav-icon-full">
-                <svg enable-background="new 0 0 24 24" viewBox="0 0 24 24" role="img" width="24" heigth="24">
-                  <path
-                    d="m18.199 2.04c-2.606-.284-4.262.961-6.199 3.008-2.045-2.047-3.593-3.292-6.199-3.008-3.544.388-6.321 4.43-5.718 7.96.966 5.659 5.944 9 11.917 12 5.973-3 10.951-6.341 11.917-12 .603-3.53-2.174-7.572-5.718-7.96z">
-                  </path>
-                </svg>
-              </div>
-              <a href="#"><span>شروع آموزش</span></a>
-            </div>
-          </div>
+        <div class="numbers-content-wrapper full-width">
+          <ul class="full-width">
+            <li class="active-page">
+              <a href="#"><span>1</span></a>
+            </li>
+            <li class="">
+              <a href="#"><span>2</span></a>
+            </li>
+            <li class="">
+              <a href="#"><span>3</span></a>
+            </li>
+            <li class="">
+              <a href="#"><span>4</span></a>
+            </li>
+            <li class="">
+              <a href="#"><span>234</span></a>
+            </li>
+          </ul>
         </div>
-      </div>
-      <div class="lesson-container full-width">
-        <div class="card-wrapper">
+        <div class="next-wrapper">
           <a href="#">
-            <div class="card-preview outline full-width"></div>
-            <div class="card-detail full-width">
-              <div class="lesson-title-fav-wrapper full-width">
-                <div class="title">
-                  <h4>
-                    آموزش اصول و قواعد نام گذاری در کدنویسی بر اساس استاندارد
-                    مایکروسافت
-                  </h4>
-                </div>
-                <div class="fav-icon">
-                  <svg enable-background="new 0 0 24 24" viewBox="0 0 24 24" role="img" width="24" heigth="24">
-                    <path
-                      d="m18.199 2.04c-2.606-.284-4.262.961-6.199 3.008-2.045-2.047-3.593-3.292-6.199-3.008-3.544.388-6.321 4.43-5.718 7.96.966 5.659 5.944 9 11.917 12 5.973-3 10.951-6.341 11.917-12 .603-3.53-2.174-7.572-5.718-7.96z">
-                    </path>
-                  </svg>
-                </div>
-              </div>
-              <div class="teacher-name-rating full-width">
-                <div class="t-name">
-                  <p><span>مهندس اسماعیل یلمه ها</span></p>
-                </div>
-                <div class="rating">
-                  <svg id="icon-rating-star" viewBox="0 0 24 24" width="18" height="18">
-                    <path
-                      d="M12 17.27l6.18 3.73-1.64-7.030 5.46-4.73-7.19-0.61-2.81-6.63-2.81 6.63-7.19 0.61 5.46 4.73-1.64 7.030 6.18-3.73z">
-                    </path>
-                  </svg>
-                  <svg id="icon-rating-star" viewBox="0 0 24 24" width="18" height="18">
-                    <path
-                      d="M12 17.27l6.18 3.73-1.64-7.030 5.46-4.73-7.19-0.61-2.81-6.63-2.81 6.63-7.19 0.61 5.46 4.73-1.64 7.030 6.18-3.73z">
-                    </path>
-                  </svg>
-                  <svg id="icon-rating-star" viewBox="0 0 24 24" width="18" height="18">
-                    <path
-                      d="M12 17.27l6.18 3.73-1.64-7.030 5.46-4.73-7.19-0.61-2.81-6.63-2.81 6.63-7.19 0.61 5.46 4.73-1.64 7.030 6.18-3.73z">
-                    </path>
-                  </svg>
-                </div>
-              </div>
-            </div>
+            <svg
+              class="scroll-btn"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              role="img"
+            >
+              <path
+                d="M21.5265 8.77171C22.1578 8.13764 22.1578 7.10962 21.5265 6.47555C20.8951 5.84148 19.8714 5.84148 19.24 6.47555L11.9999 13.7465L4.75996 6.47573C4.12858 5.84166 3.10492 5.84166 2.47354 6.47573C1.84215 7.10979 1.84215 8.13782 2.47354 8.77188L10.8332 17.1671C10.8408 17.1751 10.8486 17.183 10.8565 17.1909C11.0636 17.399 11.313 17.5388 11.577 17.6103C11.5834 17.6121 11.5899 17.6138 11.5964 17.6154C12.132 17.7536 12.7242 17.6122 13.1435 17.1911C13.1539 17.1807 13.1641 17.1702 13.1742 17.1596L21.5265 8.77171Z"
+              ></path>
+            </svg>
           </a>
         </div>
-        <div class="card-full-detail">
-          <div class="full-detail-content">
-            <div class="full-title">
-              <h4>
-                آموزش اصول و قواعد نام گذاری در کدنویسی بر اساس استاندارد
-                مایکروسافت
-              </h4>
-            </div>
-            <div class="upload-date-best-class-wrapper">
-              <div class="upload-date">
-                <span>آخرین بروز رسانی - 13 حمل 1399</span>
-              </div>
-              <div class="best-class font-size-weight">
-                <span>بهترین آموزش</span>
-              </div>
-            </div>
-            <div class="hours-levels-wrapper font-size-weight">
-              <div dir="rtl" class="lesson-hours font-size-weight">
-                <span>8 ساعت آموزش</span>
-              </div>
-              <div dir="rtl" class="difficulty-level font-size-weight">
-                <span>حرفه ایی</span>
-              </div>
-              <div dir="rtl" class="subtitle">
-                <span>زیر نویس: فارسی</span>
-              </div>
-            </div>
-            <div dir="rtl" class="short-description">
-              <span>کدنویسی استاندارد یکی از فاکتورهای مهم در انجام یک کار گروهی
-                خوب است و در واقع این موضوع کمک می کند که اعضای تیم با هزینه
-                کمتر و سرعت بالاتری بر کدهای نوشته شده توسط اعضای دیگر مسلط
-                شوند و کد از الگو و هارمونی یکسانی برخوردار باشد.</span>
-            </div>
-            <div dir="rtl" class="futures-wrapper full-width">
-              <span>شیوه نام گذاری PascalCase</span>
-              <span>شیوه نام گذاری CamelCase</span>
-              <span>شیوه نام گذاری Hungarian Casing</span>
-            </div>
-            <div class="button-wrapper full-width">
-              <div class="fav-icon fav-icon-full">
-                <svg enable-background="new 0 0 24 24" viewBox="0 0 24 24" role="img" width="24" heigth="24">
-                  <path
-                    d="m18.199 2.04c-2.606-.284-4.262.961-6.199 3.008-2.045-2.047-3.593-3.292-6.199-3.008-3.544.388-6.321 4.43-5.718 7.96.966 5.659 5.944 9 11.917 12 5.973-3 10.951-6.341 11.917-12 .603-3.53-2.174-7.572-5.718-7.96z">
-                  </path>
-                </svg>
-              </div>
-              <a href="#"><span>شروع آموزش</span></a>
-            </div>
-          </div>
-        </div>
       </div>
-      <div class="lesson-container full-width">
-        <div class="card-wrapper">
+    </section>
+    <!-- ---------------------------- section 6 ---------------------- -->
+    <section class="s6 transform-position full-width">
+      <div class="ads-wrapper full-width">
+        <div class="ads content-wrapper">
           <a href="#">
-            <div class="card-preview outline full-width"></div>
-            <div class="card-detail full-width">
-              <div class="lesson-title-fav-wrapper full-width">
-                <div class="title">
-                  <h4>
-                    آموزش اصول و قواعد نام گذاری در کدنویسی بر اساس استاندارد
-                    مایکروسافت
-                  </h4>
-                </div>
-                <div class="fav-icon">
-                  <svg enable-background="new 0 0 24 24" viewBox="0 0 24 24" role="img" width="24" heigth="24">
-                    <path
-                      d="m18.199 2.04c-2.606-.284-4.262.961-6.199 3.008-2.045-2.047-3.593-3.292-6.199-3.008-3.544.388-6.321 4.43-5.718 7.96.966 5.659 5.944 9 11.917 12 5.973-3 10.951-6.341 11.917-12 .603-3.53-2.174-7.572-5.718-7.96z">
-                    </path>
-                  </svg>
-                </div>
-              </div>
-              <div class="teacher-name-rating full-width">
-                <div class="t-name">
-                  <p><span>مهندس اسماعیل یلمه ها</span></p>
-                </div>
-                <div class="rating">
-                  <svg id="icon-rating-star" viewBox="0 0 24 24" width="18" height="18">
-                    <path
-                      d="M12 17.27l6.18 3.73-1.64-7.030 5.46-4.73-7.19-0.61-2.81-6.63-2.81 6.63-7.19 0.61 5.46 4.73-1.64 7.030 6.18-3.73z">
-                    </path>
-                  </svg>
-                  <svg id="icon-rating-star" viewBox="0 0 24 24" width="18" height="18">
-                    <path
-                      d="M12 17.27l6.18 3.73-1.64-7.030 5.46-4.73-7.19-0.61-2.81-6.63-2.81 6.63-7.19 0.61 5.46 4.73-1.64 7.030 6.18-3.73z">
-                    </path>
-                  </svg>
-                  <svg id="icon-rating-star" viewBox="0 0 24 24" width="18" height="18">
-                    <path
-                      d="M12 17.27l6.18 3.73-1.64-7.030 5.46-4.73-7.19-0.61-2.81-6.63-2.81 6.63-7.19 0.61 5.46 4.73-1.64 7.030 6.18-3.73z">
-                    </path>
-                  </svg>
-                </div>
-              </div>
-            </div>
+            <div class="ad-img outline"></div>
+            <span>اعلانات شما در اینجا</span>
           </a>
         </div>
-        <div class="card-full-detail-left">
-          <div class="full-detail-content">
-            <div class="full-title">
-              <h4>
-                آموزش اصول و قواعد نام گذاری در کدنویسی بر اساس استاندارد
-                مایکروسافت
-              </h4>
-            </div>
-            <div class="upload-date-best-class-wrapper">
-              <div class="upload-date">
-                <span>آخرین بروز رسانی - 13 حمل 1399</span>
-              </div>
-              <div class="best-class font-size-weight">
-                <span>بهترین آموزش</span>
-              </div>
-            </div>
-            <div class="hours-levels-wrapper font-size-weight">
-              <div dir="rtl" class="lesson-hours font-size-weight">
-                <span>8 ساعت آموزش</span>
-              </div>
-              <div dir="rtl" class="difficulty-level font-size-weight">
-                <span>حرفه ایی</span>
-              </div>
-              <div dir="rtl" class="subtitle">
-                <span>زیر نویس: فارسی</span>
-              </div>
-            </div>
-            <div dir="rtl" class="short-description">
-              <span>کدنویسی استاندارد یکی از فاکتورهای مهم در انجام یک کار گروهی
-                خوب است و در واقع این موضوع کمک می کند که اعضای تیم با هزینه
-                کمتر و سرعت بالاتری بر کدهای نوشته شده توسط اعضای دیگر مسلط
-                شوند و کد از الگو و هارمونی یکسانی برخوردار باشد.</span>
-            </div>
-            <div dir="rtl" class="futures-wrapper full-width">
-              <span>شیوه نام گذاری PascalCase</span>
-              <span>شیوه نام گذاری CamelCase</span>
-              <span>شیوه نام گذاری Hungarian Casing</span>
-            </div>
-            <div class="button-wrapper full-width">
-              <div class="fav-icon fav-icon-full">
-                <svg enable-background="new 0 0 24 24" viewBox="0 0 24 24" role="img" width="24" heigth="24">
-                  <path
-                    d="m18.199 2.04c-2.606-.284-4.262.961-6.199 3.008-2.045-2.047-3.593-3.292-6.199-3.008-3.544.388-6.321 4.43-5.718 7.96.966 5.659 5.944 9 11.917 12 5.973-3 10.951-6.341 11.917-12 .603-3.53-2.174-7.572-5.718-7.96z">
-                  </path>
-                </svg>
-              </div>
-              <a href="#"><span>شروع آموزش</span></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="lesson-container full-width">
-        <div class="card-wrapper">
+        <div class="ads content-wrapper">
           <a href="#">
-            <div class="card-preview outline full-width"></div>
-            <div class="card-detail full-width">
-              <div class="lesson-title-fav-wrapper full-width">
-                <div class="title">
-                  <h4>
-                    آموزش اصول و قواعد نام گذاری در کدنویسی بر اساس استاندارد
-                    مایکروسافت
-                  </h4>
-                </div>
-                <div class="fav-icon">
-                  <svg enable-background="new 0 0 24 24" viewBox="0 0 24 24" role="img" width="24" heigth="24">
-                    <path
-                      d="m18.199 2.04c-2.606-.284-4.262.961-6.199 3.008-2.045-2.047-3.593-3.292-6.199-3.008-3.544.388-6.321 4.43-5.718 7.96.966 5.659 5.944 9 11.917 12 5.973-3 10.951-6.341 11.917-12 .603-3.53-2.174-7.572-5.718-7.96z">
-                    </path>
-                  </svg>
-                </div>
-              </div>
-              <div class="teacher-name-rating full-width">
-                <div class="t-name">
-                  <p><span>مهندس اسماعیل یلمه ها</span></p>
-                </div>
-                <div class="rating">
-                  <svg id="icon-rating-star" viewBox="0 0 24 24" width="18" height="18">
-                    <path
-                      d="M12 17.27l6.18 3.73-1.64-7.030 5.46-4.73-7.19-0.61-2.81-6.63-2.81 6.63-7.19 0.61 5.46 4.73-1.64 7.030 6.18-3.73z">
-                    </path>
-                  </svg>
-                  <svg id="icon-rating-star" viewBox="0 0 24 24" width="18" height="18">
-                    <path
-                      d="M12 17.27l6.18 3.73-1.64-7.030 5.46-4.73-7.19-0.61-2.81-6.63-2.81 6.63-7.19 0.61 5.46 4.73-1.64 7.030 6.18-3.73z">
-                    </path>
-                  </svg>
-                  <svg id="icon-rating-star" viewBox="0 0 24 24" width="18" height="18">
-                    <path
-                      d="M12 17.27l6.18 3.73-1.64-7.030 5.46-4.73-7.19-0.61-2.81-6.63-2.81 6.63-7.19 0.61 5.46 4.73-1.64 7.030 6.18-3.73z">
-                    </path>
-                  </svg>
-                </div>
-              </div>
-            </div>
+            <div class="ad-img outline"></div>
+            <span>اعلانات شما در اینجا</span>
           </a>
         </div>
-        <div class="card-full-detail">
-          <div class="full-detail-content">
-            <div class="full-title">
-              <h4>
-                آموزش اصول و قواعد نام گذاری در کدنویسی بر اساس استاندارد
-                مایکروسافت
-              </h4>
-            </div>
-            <div class="upload-date-best-class-wrapper">
-              <div class="upload-date">
-                <span>آخرین بروز رسانی - 13 حمل 1399</span>
-              </div>
-              <div class="best-class font-size-weight">
-                <span>بهترین آموزش</span>
-              </div>
-            </div>
-            <div class="hours-levels-wrapper font-size-weight">
-              <div dir="rtl" class="lesson-hours font-size-weight">
-                <span>8 ساعت آموزش</span>
-              </div>
-              <div dir="rtl" class="difficulty-level font-size-weight">
-                <span>حرفه ایی</span>
-              </div>
-              <div dir="rtl" class="subtitle">
-                <span>زیر نویس: فارسی</span>
-              </div>
-            </div>
-            <div dir="rtl" class="short-description">
-              <span>کدنویسی استاندارد یکی از فاکتورهای مهم در انجام یک کار گروهی
-                خوب است و در واقع این موضوع کمک می کند که اعضای تیم با هزینه
-                کمتر و سرعت بالاتری بر کدهای نوشته شده توسط اعضای دیگر مسلط
-                شوند و کد از الگو و هارمونی یکسانی برخوردار باشد.</span>
-            </div>
-            <div dir="rtl" class="futures-wrapper full-width">
-              <span>شیوه نام گذاری PascalCase</span>
-              <span>شیوه نام گذاری CamelCase</span>
-              <span>شیوه نام گذاری Hungarian Casing</span>
-            </div>
-            <div class="button-wrapper full-width">
-              <div class="fav-icon fav-icon-full">
-                <svg enable-background="new 0 0 24 24" viewBox="0 0 24 24" role="img" width="24" heigth="24">
-                  <path
-                    d="m18.199 2.04c-2.606-.284-4.262.961-6.199 3.008-2.045-2.047-3.593-3.292-6.199-3.008-3.544.388-6.321 4.43-5.718 7.96.966 5.659 5.944 9 11.917 12 5.973-3 10.951-6.341 11.917-12 .603-3.53-2.174-7.572-5.718-7.96z">
-                  </path>
-                </svg>
-              </div>
-              <a href="#"><span>شروع آموزش</span></a>
-            </div>
-          </div>
+        <div class="ads content-wrapper">
+          <a href="#">
+            <div class="ad-img outline"></div>
+            <span>اعلانات شما در اینجا</span>
+          </a>
         </div>
       </div>
-    </div>
-    <div class="numbers-wrapper full-width">
-      <div class="previous-wrapper">
-        <a href="#">
-          <svg class="scroll-btn" width="24" height="24" viewBox="0 0 24 24" role="img">
-            <path
-              d="M21.5265 8.77171C22.1578 8.13764 22.1578 7.10962 21.5265 6.47555C20.8951 5.84148 19.8714 5.84148 19.24 6.47555L11.9999 13.7465L4.75996 6.47573C4.12858 5.84166 3.10492 5.84166 2.47354 6.47573C1.84215 7.10979 1.84215 8.13782 2.47354 8.77188L10.8332 17.1671C10.8408 17.1751 10.8486 17.183 10.8565 17.1909C11.0636 17.399 11.313 17.5388 11.577 17.6103C11.5834 17.6121 11.5899 17.6138 11.5964 17.6154C12.132 17.7536 12.7242 17.6122 13.1435 17.1911C13.1539 17.1807 13.1641 17.1702 13.1742 17.1596L21.5265 8.77171Z">
-            </path>
-          </svg>
+    </section>
+    <section class="s7 transform-position full-width">
+      <div class="t-hero-wrapper full-width">
+        <div class="t-hero-left full-width">
+          <img class="t-hero-img" src="./teaching.svg" alt="teacher image" />
+        </div>
+        <div class="t-hero-right full-width">
+          <h1>آموزگار خودآموز باشید</h1>
+          <p>
+            <span
+              >تیم ما متشکل از اساتید مجرب و حرفه از سراسر کشور با رشته های
+              مختلف در عرصه تعلیمی و تحصیلی در حال فعالیت و تدریس میباشند شما
+              نیز میتوانید</span
+            >
+          </p>
+          <a class="outline intro-action-btn" href="#"> شروع تدریس</a>
+        </div>
+      </div>
+    </section>
+    <footer class="s8 transform-position full-width">
+      <div class="footer-wrapper full-width">
+        <a class="footer__logo" href="/">
+          <img src="./undraw_logo_design_bjnx.svg" alt="khud Amooz logo" />
         </a>
-      </div>
-      <div class="numbers-content-wrapper full-width">
-        <ul class="full-width">
-          <li class="active-page">
-            <a href="#"><span>1</span></a>
-          </li>
-          <li class="">
-            <a href="#"><span>2</span></a>
-          </li>
-          <li class="">
-            <a href="#"><span>3</span></a>
-          </li>
-          <li class="">
-            <a href="#"><span>4</span></a>
-          </li>
-          <li class="">
-            <a href="#"><span>234</span></a>
-          </li>
-        </ul>
-      </div>
-      <div class="next-wrapper">
-        <a href="#">
-          <svg class="scroll-btn" width="24" height="24" viewBox="0 0 24 24" role="img">
-            <path
-              d="M21.5265 8.77171C22.1578 8.13764 22.1578 7.10962 21.5265 6.47555C20.8951 5.84148 19.8714 5.84148 19.24 6.47555L11.9999 13.7465L4.75996 6.47573C4.12858 5.84166 3.10492 5.84166 2.47354 6.47573C1.84215 7.10979 1.84215 8.13782 2.47354 8.77188L10.8332 17.1671C10.8408 17.1751 10.8486 17.183 10.8565 17.1909C11.0636 17.399 11.313 17.5388 11.577 17.6103C11.5834 17.6121 11.5899 17.6138 11.5964 17.6154C12.132 17.7536 12.7242 17.6122 13.1435 17.1911C13.1539 17.1807 13.1641 17.1702 13.1742 17.1596L21.5265 8.77171Z">
-            </path>
-          </svg>
-        </a>
-      </div>
-    </div>
-  </section>
-  <!-- ---------------------------- section 6 ---------------------- -->
-  <section class="s6 transform-position full-width">
-    <div class="ads-wrapper full-width">
-      <div class="ads content-wrapper">
-        <a href="#">
-          <div class="ad-img outline"></div>
-          <span>اعلانات شما در اینجا</span>
-        </a>
-      </div>
-      <div class="ads content-wrapper">
-        <a href="#">
-          <div class="ad-img outline"></div>
-          <span>اعلانات شما در اینجا</span>
-        </a>
-      </div>
-      <div class="ads content-wrapper">
-        <a href="#">
-          <div class="ad-img outline"></div>
-          <span>اعلانات شما در اینجا</span>
-        </a>
-      </div>
-    </div>
-  </section>
-  <section class="s7 transform-position full-width">
-    <div class="t-hero-wrapper full-width">
-      <div class="t-hero-left full-width">
-        <img class="t-hero-img" src="./teaching.svg" alt="teacher image" />
-      </div>
-      <div class="t-hero-right full-width">
-        <h1>آموزگار خودآموز باشید</h1>
-        <p>
-          <span>تیم ما متشکل از اساتید مجرب و حرفه از سراسر کشور با رشته های
-            مختلف در عرصه تعلیمی و تحصیلی در حال فعالیت و تدریس میباشند شما
-            نیز میتوانید</span>
-        </p>
-        <a class="outline" href="#"> شروع تدریس</a>
-      </div>
-    </div>
-  </section>
-  <footer class="s8 transform-position full-width">
-    <div class="footer-wrapper full-width">
-      <a class="footer__logo" href="/">
-        <img src="./undraw_logo_design_bjnx.svg" alt="khud Amooz logo" />
-      </a>
-      <div class="footer__social">
-        <a href="#">
-          <svg height="25px" viewBox="0 0 512 512" width="25px" xmlns="http://www.w3.org/2000/svg">
-            <path class="social_icon_primary"
-              d="m483.738281 0h-455.5c-15.597656.0078125-28.24218725 12.660156-28.238281 28.261719v455.5c.0078125 15.597656 12.660156 28.242187 28.261719 28.238281h455.476562c15.605469.003906 28.257813-12.644531 28.261719-28.25 0-.003906 0-.007812 0-.011719v-455.5c-.007812-15.597656-12.660156-28.24218725-28.261719-28.238281zm0 0" />
-            <path class="social_icon_secondary"
-              d="m353.5 512v-198h66.75l10-77.5h-76.75v-49.359375c0-22.386719 6.214844-37.640625 38.316406-37.640625h40.683594v-69.128906c-7.078125-.941406-31.363281-3.046875-59.621094-3.046875-59 0-99.378906 36-99.378906 102.140625v57.035156h-66.5v77.5h66.5v198zm0 0" />
-          </svg>
-        </a>
-        <a href="#">
-          <svg height="25px" viewBox="0 0 511 511.9" width="25px" xmlns="http://www.w3.org/2000/svg">
-            <path class="social_icon_primary"
-              d="m510.949219 150.5c-1.199219-27.199219-5.597657-45.898438-11.898438-62.101562-6.5-17.199219-16.5-32.597657-29.601562-45.398438-12.800781-13-28.300781-23.101562-45.300781-29.5-16.296876-6.300781-34.898438-10.699219-62.097657-11.898438-27.402343-1.300781-36.101562-1.601562-105.601562-1.601562s-78.199219.300781-105.5 1.5c-27.199219 1.199219-45.898438 5.601562-62.097657 11.898438-17.203124 6.5-32.601562 16.5-45.402343 29.601562-13 12.800781-23.097657 28.300781-29.5 45.300781-6.300781 16.300781-10.699219 34.898438-11.898438 62.097657-1.300781 27.402343-1.601562 36.101562-1.601562 105.601562s.300781 78.199219 1.5 105.5c1.199219 27.199219 5.601562 45.898438 11.902343 62.101562 6.5 17.199219 16.597657 32.597657 29.597657 45.398438 12.800781 13 28.300781 23.101562 45.300781 29.5 16.300781 6.300781 34.898438 10.699219 62.101562 11.898438 27.296876 1.203124 36 1.5 105.5 1.5s78.199219-.296876 105.5-1.5c27.199219-1.199219 45.898438-5.597657 62.097657-11.898438 34.402343-13.300781 61.601562-40.5 74.902343-74.898438 6.296876-16.300781 10.699219-34.902343 11.898438-62.101562 1.199219-27.300781 1.5-36 1.5-105.5s-.101562-78.199219-1.300781-105.5zm-46.097657 209c-1.101562 25-5.300781 38.5-8.800781 47.5-8.601562 22.300781-26.300781 40-48.601562 48.601562-9 3.5-22.597657 7.699219-47.5 8.796876-27 1.203124-35.097657 1.5-103.398438 1.5s-76.5-.296876-103.402343-1.5c-25-1.097657-38.5-5.296876-47.5-8.796876-11.097657-4.101562-21.199219-10.601562-29.398438-19.101562-8.5-8.300781-15-18.300781-19.101562-29.398438-3.5-9-7.699219-22.601562-8.796876-47.5-1.203124-27-1.5-35.101562-1.5-103.402343s.296876-76.5 1.5-103.398438c1.097657-25 5.296876-38.5 8.796876-47.5 4.101562-11.101562 10.601562-21.199219 19.203124-29.402343 8.296876-8.5 18.296876-15 29.398438-19.097657 9-3.5 22.601562-7.699219 47.5-8.800781 27-1.199219 35.101562-1.5 103.398438-1.5 68.402343 0 76.5.300781 103.402343 1.5 25 1.101562 38.5 5.300781 47.5 8.800781 11.097657 4.097657 21.199219 10.597657 29.398438 19.097657 8.5 8.300781 15 18.300781 19.101562 29.402343 3.5 9 7.699219 22.597657 8.800781 47.5 1.199219 27 1.5 35.097657 1.5 103.398438s-.300781 76.300781-1.5 103.300781zm0 0" />
-            <path class="social_icon_primary"
-              d="m256.449219 124.5c-72.597657 0-131.5 58.898438-131.5 131.5s58.902343 131.5 131.5 131.5c72.601562 0 131.5-58.898438 131.5-131.5s-58.898438-131.5-131.5-131.5zm0 216.800781c-47.097657 0-85.300781-38.199219-85.300781-85.300781s38.203124-85.300781 85.300781-85.300781c47.101562 0 85.300781 38.199219 85.300781 85.300781s-38.199219 85.300781-85.300781 85.300781zm0 0" />
-            <path class="social_icon_primary"
-              d="m423.851562 119.300781c0 16.953125-13.746093 30.699219-30.703124 30.699219-16.953126 0-30.699219-13.746094-30.699219-30.699219 0-16.957031 13.746093-30.699219 30.699219-30.699219 16.957031 0 30.703124 13.742188 30.703124 30.699219zm0 0" />
-          </svg>
-        </a>
-        <a href="#">
-          <svg height="25px" viewBox="0 0 512 512" width="25px" style="enable-background: new 0 0 512 512"
-            xml:space="preserve">
-            <path class="social_icon_primary" d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
+        <div class="footer__social">
+          <a href="#">
+            <svg
+              height="25px"
+              viewBox="0 0 512 512"
+              width="25px"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                class="social_icon_primary"
+                d="m483.738281 0h-455.5c-15.597656.0078125-28.24218725 12.660156-28.238281 28.261719v455.5c.0078125 15.597656 12.660156 28.242187 28.261719 28.238281h455.476562c15.605469.003906 28.257813-12.644531 28.261719-28.25 0-.003906 0-.007812 0-.011719v-455.5c-.007812-15.597656-12.660156-28.24218725-28.261719-28.238281zm0 0"
+              />
+              <path
+                class="social_icon_secondary"
+                d="m353.5 512v-198h66.75l10-77.5h-76.75v-49.359375c0-22.386719 6.214844-37.640625 38.316406-37.640625h40.683594v-69.128906c-7.078125-.941406-31.363281-3.046875-59.621094-3.046875-59 0-99.378906 36-99.378906 102.140625v57.035156h-66.5v77.5h66.5v198zm0 0"
+              />
+            </svg>
+          </a>
+          <a href="#">
+            <svg
+              height="25px"
+              viewBox="0 0 511 511.9"
+              width="25px"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                class="social_icon_primary"
+                d="m510.949219 150.5c-1.199219-27.199219-5.597657-45.898438-11.898438-62.101562-6.5-17.199219-16.5-32.597657-29.601562-45.398438-12.800781-13-28.300781-23.101562-45.300781-29.5-16.296876-6.300781-34.898438-10.699219-62.097657-11.898438-27.402343-1.300781-36.101562-1.601562-105.601562-1.601562s-78.199219.300781-105.5 1.5c-27.199219 1.199219-45.898438 5.601562-62.097657 11.898438-17.203124 6.5-32.601562 16.5-45.402343 29.601562-13 12.800781-23.097657 28.300781-29.5 45.300781-6.300781 16.300781-10.699219 34.898438-11.898438 62.097657-1.300781 27.402343-1.601562 36.101562-1.601562 105.601562s.300781 78.199219 1.5 105.5c1.199219 27.199219 5.601562 45.898438 11.902343 62.101562 6.5 17.199219 16.597657 32.597657 29.597657 45.398438 12.800781 13 28.300781 23.101562 45.300781 29.5 16.300781 6.300781 34.898438 10.699219 62.101562 11.898438 27.296876 1.203124 36 1.5 105.5 1.5s78.199219-.296876 105.5-1.5c27.199219-1.199219 45.898438-5.597657 62.097657-11.898438 34.402343-13.300781 61.601562-40.5 74.902343-74.898438 6.296876-16.300781 10.699219-34.902343 11.898438-62.101562 1.199219-27.300781 1.5-36 1.5-105.5s-.101562-78.199219-1.300781-105.5zm-46.097657 209c-1.101562 25-5.300781 38.5-8.800781 47.5-8.601562 22.300781-26.300781 40-48.601562 48.601562-9 3.5-22.597657 7.699219-47.5 8.796876-27 1.203124-35.097657 1.5-103.398438 1.5s-76.5-.296876-103.402343-1.5c-25-1.097657-38.5-5.296876-47.5-8.796876-11.097657-4.101562-21.199219-10.601562-29.398438-19.101562-8.5-8.300781-15-18.300781-19.101562-29.398438-3.5-9-7.699219-22.601562-8.796876-47.5-1.203124-27-1.5-35.101562-1.5-103.402343s.296876-76.5 1.5-103.398438c1.097657-25 5.296876-38.5 8.796876-47.5 4.101562-11.101562 10.601562-21.199219 19.203124-29.402343 8.296876-8.5 18.296876-15 29.398438-19.097657 9-3.5 22.601562-7.699219 47.5-8.800781 27-1.199219 35.101562-1.5 103.398438-1.5 68.402343 0 76.5.300781 103.402343 1.5 25 1.101562 38.5 5.300781 47.5 8.800781 11.097657 4.097657 21.199219 10.597657 29.398438 19.097657 8.5 8.300781 15 18.300781 19.101562 29.402343 3.5 9 7.699219 22.597657 8.800781 47.5 1.199219 27 1.5 35.097657 1.5 103.398438s-.300781 76.300781-1.5 103.300781zm0 0"
+              />
+              <path
+                class="social_icon_primary"
+                d="m256.449219 124.5c-72.597657 0-131.5 58.898438-131.5 131.5s58.902343 131.5 131.5 131.5c72.601562 0 131.5-58.898438 131.5-131.5s-58.898438-131.5-131.5-131.5zm0 216.800781c-47.097657 0-85.300781-38.199219-85.300781-85.300781s38.203124-85.300781 85.300781-85.300781c47.101562 0 85.300781 38.199219 85.300781 85.300781s-38.199219 85.300781-85.300781 85.300781zm0 0"
+              />
+              <path
+                class="social_icon_primary"
+                d="m423.851562 119.300781c0 16.953125-13.746093 30.699219-30.703124 30.699219-16.953126 0-30.699219-13.746094-30.699219-30.699219 0-16.957031 13.746093-30.699219 30.699219-30.699219 16.957031 0 30.703124 13.742188 30.703124 30.699219zm0 0"
+              />
+            </svg>
+          </a>
+          <a href="#">
+            <svg
+              height="25px"
+              viewBox="0 0 512 512"
+              width="25px"
+              style="enable-background: new 0 0 512 512"
+              xml:space="preserve"
+            >
+              <path
+                class="social_icon_primary"
+                d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
 	              c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
 	              c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
 	              c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
 	              c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
 	              c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
 	              C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
-	              C480.224,136.96,497.728,118.496,512,97.248z" />
-          </svg>
-        </a>
-        <a href="#">
-          <svg height="25px" viewBox="0 -77 512.00213 512" width="25px" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="m501.453125 56.09375c-5.902344-21.933594-23.195313-39.222656-45.125-45.128906-40.066406-10.964844-200.332031-10.964844-200.332031-10.964844s-160.261719 0-200.328125 10.546875c-21.507813 5.902344-39.222657 23.617187-45.125 45.546875-10.542969 40.0625-10.542969 123.148438-10.542969 123.148438s0 83.503906 10.542969 123.148437c5.90625 21.929687 23.195312 39.222656 45.128906 45.128906 40.484375 10.964844 200.328125 10.964844 200.328125 10.964844s160.261719 0 200.328125-10.546875c21.933594-5.902344 39.222656-23.195312 45.128906-45.125 10.542969-40.066406 10.542969-123.148438 10.542969-123.148438s.421875-83.507812-10.546875-123.570312zm0 0"
-              class="social_icon_primary" />
-            <path d="m204.96875 256 133.269531-76.757812-133.269531-76.757813zm0 0" class="social_icon_secondary" />
-          </svg>
-        </a>
-      </div>
-      <div class="footer__links col1">
-        <a href="#">درباره ما</a>
-        <a href="#">تماس با ما</a>
-        <a href="#">بلاگ</a>
-      </div>
-      <div class="footer__links col2">
-        <a href="#">کاریابی</a>
-        <a href="#">پشتیبانی</a>
-        <a href="#">قوانین و مقرارت</a>
-      </div>
-      <div class="footer__cta">
-        <div class="lang-wrapper-btn-opt">
-          <button class="outline lang-btn-wrapper">
-            <svg class="lang_arrow" width="24" height="24" viewBox="0 0 24 24" role="img">
-              <path
-                d="M21.5265 8.77171C22.1578 8.13764 22.1578 7.10962 21.5265 6.47555C20.8951 5.84148 19.8714 5.84148 19.24 6.47555L11.9999 13.7465L4.75996 6.47573C4.12858 5.84166 3.10492 5.84166 2.47354 6.47573C1.84215 7.10979 1.84215 8.13782 2.47354 8.77188L10.8332 17.1671C10.8408 17.1751 10.8486 17.183 10.8565 17.1909C11.0636 17.399 11.313 17.5388 11.577 17.6103C11.5834 17.6121 11.5899 17.6138 11.5964 17.6154C12.132 17.7536 12.7242 17.6122 13.1435 17.1911C13.1539 17.1807 13.1641 17.1702 13.1742 17.1596L21.5265 8.77171Z">
-              </path>
+	              C480.224,136.96,497.728,118.496,512,97.248z"
+              />
             </svg>
-            <span>فارسی</span>
-            <svg class="lang-earth" viewBox="0 0 480.1 480.1" width="20" height="20">
-              <path d="M240.135,0.05C144.085,0.036,57.277,57.289,19.472,145.586l-2.992,0.992l1.16,3.48
+          </a>
+          <a href="#">
+            <svg
+              height="25px"
+              viewBox="0 -77 512.00213 512"
+              width="25px"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m501.453125 56.09375c-5.902344-21.933594-23.195313-39.222656-45.125-45.128906-40.066406-10.964844-200.332031-10.964844-200.332031-10.964844s-160.261719 0-200.328125 10.546875c-21.507813 5.902344-39.222657 23.617187-45.125 45.546875-10.542969 40.0625-10.542969 123.148438-10.542969 123.148438s0 83.503906 10.542969 123.148437c5.90625 21.929687 23.195312 39.222656 45.128906 45.128906 40.484375 10.964844 200.328125 10.964844 200.328125 10.964844s160.261719 0 200.328125-10.546875c21.933594-5.902344 39.222656-23.195312 45.128906-45.125 10.542969-40.066406 10.542969-123.148438 10.542969-123.148438s.421875-83.507812-10.546875-123.570312zm0 0"
+                class="social_icon_primary"
+              />
+              <path
+                d="m204.96875 256 133.269531-76.757812-133.269531-76.757813zm0 0"
+                class="social_icon_secondary"
+              />
+            </svg>
+          </a>
+        </div>
+        <div class="footer__links col1">
+          <a href="#">درباره ما</a>
+          <a href="#">تماس با ما</a>
+          <a href="#">بلاگ</a>
+        </div>
+        <div class="footer__links col2">
+          <a href="#">کاریابی</a>
+          <a href="#">پشتیبانی</a>
+          <a href="#">قوانین و مقرارت</a>
+        </div>
+        <div class="footer__cta">
+          <div class="lang-wrapper-btn-opt">
+            <button class="outline lang-btn-wrapper">
+              <svg
+                class="lang_arrow"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                role="img"
+              >
+                <path
+                  d="M21.5265 8.77171C22.1578 8.13764 22.1578 7.10962 21.5265 6.47555C20.8951 5.84148 19.8714 5.84148 19.24 6.47555L11.9999 13.7465L4.75996 6.47573C4.12858 5.84166 3.10492 5.84166 2.47354 6.47573C1.84215 7.10979 1.84215 8.13782 2.47354 8.77188L10.8332 17.1671C10.8408 17.1751 10.8486 17.183 10.8565 17.1909C11.0636 17.399 11.313 17.5388 11.577 17.6103C11.5834 17.6121 11.5899 17.6138 11.5964 17.6154C12.132 17.7536 12.7242 17.6122 13.1435 17.1911C13.1539 17.1807 13.1641 17.1702 13.1742 17.1596L21.5265 8.77171Z"
+                ></path>
+              </svg>
+              <span>فارسی</span>
+              <svg
+                class="lang-earth"
+                viewBox="0 0 480.1 480.1"
+                width="20"
+                height="20"
+              >
+                <path
+                  d="M240.135,0.05C144.085,0.036,57.277,57.289,19.472,145.586l-2.992,0.992l1.16,3.48
                 			c-49.776,122.766,9.393,262.639,132.159,312.415c28.673,11.626,59.324,17.594,90.265,17.577
                 			c132.548,0.02,240.016-107.416,240.036-239.964S372.684,0.069,240.135,0.05z M428.388,361.054l-12.324-12.316V320.05
                 			c0.014-1.238-0.26-2.462-0.8-3.576l-31.2-62.312V224.05c0-2.674-1.335-5.172-3.56-6.656l-24-16
@@ -1078,30 +1412,33 @@
                 			c8.961,9.981,17.014,20.741,24.064,32.152l-39.36,13.12l-42.616-7.104l-14.08-21.12c-1.476-2.213-3.956-3.547-6.616-3.56h-48
                 			c-2.122,0-4.156,0.844-5.656,2.344l-24,24c-1.782,1.781-2.621,4.298-2.264,6.792l8,56c0.403,2.769,2.223,5.126,4.8,6.216l56,24
                 			c1.604,0.695,3.394,0.838,5.088,0.408l28.568-7.144l17.464,11.664v27.72c-0.014,1.238,0.26,2.462,0.8,3.576l31.2,62.312v30.112
-                			c0,2.122,0.844,4.156,2.344,5.656l16.736,16.744C344.921,473.383,204.549,493.415,105.616,419.191z" />
-            </svg>
-          </button>
-          <div class="lang_dropdown_opt d-none">
-            <ul>
-              <li><a class="isActive" href="#">فارسی</a></li>
-              <li><a class="notActive" href="#">پشتو</a></li>
-              <li><a class="notActive" href="#">English</a></li>
-            </ul>
+                			c0,2.122,0.844,4.156,2.344,5.656l16.736,16.744C344.921,473.383,204.549,493.415,105.616,419.191z"
+                />
+              </svg>
+            </button>
+            <div class="lang_dropdown_opt d-none">
+              <ul>
+                <li><a class="isActive" href="#">فارسی</a></li>
+                <li><a class="notActive" href="#">پشتو</a></li>
+                <li><a class="notActive" href="#">English</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__copyright">
+            <span> &copy; 2020 KhudAmooz. All Rights Reserved. </span>
           </div>
         </div>
-        <div class="footer__copyright">
-          <span> &copy; 2020 KhudAmooz. All Rights Reserved. </span>
-        </div>
       </div>
+    </footer>
+    <div id="back_to_top" class="back-to-top" style="visibility: hidden">
+      <a title="برگشت به بالا" href="#">
+        <img
+          src="./icon-backtotop-1b04df73090f6b0f3192a3b71874ca3b3cc19dff16adc6cf365cd0c75897f6c0.png"
+          alt="back to the top image"
+        />
+      </a>
     </div>
-  </footer>
-  <div id="back_to_top" class="back-to-top" style="visibility: hidden;">
-    <a title="برگشت به بالا" href="#">
-      <img src="./icon-backtotop-1b04df73090f6b0f3192a3b71874ca3b3cc19dff16adc6cf365cd0c75897f6c0.png"
-        alt="back to the top image" />
-    </a>
-  </div>
-  <script src="./index.js"></script>
-</body>
+    <script src="./index.js"></script>
 
+  </body>
 </html>
